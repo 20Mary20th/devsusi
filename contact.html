@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<title>Media</title>
+ <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/foundation.css"/>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+  /*div.wrapper-nav {
+    overflow-x: visible !important;
+  }*/
+  div.nav-menu{
+    width: auto !important;
+  }
+</style>
+</head>
+<body>
+ <div class = "wrapper-header fixed">
+      <div class="menu-toggle-btn">
+         <span></span>
+          <span></span>
+         <span></span>
+     </div>
+      <!-- <div class= "title"><img class="medium-8 small-4" src="images/icons/susilogo2.png" alt=""/></div> -->
+      <!-- <div class="row">
+          <div class="small-centered columns logo"><a href="home.html"><img src="images/icons/susilogo2.png" alt=""/></a></div>
+      </div> -->
+      <div class= "cart"><a href="cart.html"><img src="images/icons/cart1.png" alt=""></a></div>
+      <div class= "title"><h5>Contact</h5></div>
+</div>
+<div id="content">
+    <div class="media-content">
+    </div>
+    <div class="mobile-nav">
+         <ul>
+            <a href="menu.html"><li>Menu</li></a>
+            <a href="botique.html"><li>Botique</li></a>
+            <a href="my-susi.html"><li>Feed Me</li></a>
+            <a href="media.html"><li>Media</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            
+        </ul>
+    </div>
+</div>
+ <div class="wrapper-nav">
+      <div class="nav-menu">
+        <ul class="selection small-12">
+         <li class="active small-6" rel="tab1"><div class="tab-container">Inquiry</div></li>
+         <li class="small-6"rel="tab2"><div class="tab-container">Reservation</div></li>
+        </ul>
+      </div>   
+    </div>
+
+   <div class="wrapper-media row" id = "wrapper-media1">
+          <div id="tab1" class="content">
+               <div class="wrapper-reservation" id = "w-reservation">
+      <div class="banner">
+        <h6>Feel free to leave a message and we'll be happy to give you a reply</h6>
+      </div>
+
+      <div class="wrapper-nav-form">
+
+        <div class="wrapper-fullname">
+          <input type="text" placeholder="full name"/>
+        </div>
+         <div class="wrapper-fullname">
+          <input type="text" placeholder="email address"/>
+        </div>
+         <div class="wrapper-fullname">
+          <input type="text" placeholder="contact number"/>
+        </div>
+        <div class="wrapper-fullname">
+          <textarea placeholder="message"/></textarea>
+        </div>
+
+
+       
+        </div>
+
+        
+        <div class="inquire-submit">
+          <button class="main-na" type="submit">Inquire Now</button>
+        </div>
+      </div>
+   </div>
+       <div id="tab2" class="content">
+            <div class="wrapper-reservation" id = "w-reservation">
+      <div class="banner">
+        <h6>We'll reserve a table just for you! Use the form below, and we'll confirm with if the date and time is available.</h6>
+      </div>
+
+      <div class="wrapper-nav-form">
+
+        <div class="wrapper-fullname">
+          <input type="text" placeholder="full name"/>
+        </div>
+
+        <div class="wrapper-contact" id = "wcontact2">
+          <input class="number" type="text" placeholder = "contact number"/>
+          <input class="number-guest" type="text" placeholder = "number of guest"/>
+        </div>
+
+        <div class="wrapper-days1 row">
+          <div id="wrapper-month" class = "small-6 columns left wrapper-first">
+              <select name="month" id="monthList">
+                  <option value="0"><h6>month</h6></option>
+                  <option value="jan">January</option>
+                  <option value="feb">February</option>
+                  <option value="mar">March</option>
+                  <option value="apr">April</option>
+                  <option value="may">May</option>
+                  <option value="jun">June</option>
+                  <option value="jul">July</option>
+                  <option value="aug">August</option>
+                  <option value="sept">September</option>
+                  <option value="oct">October</option>
+                  <option value="nov">November</option>
+                  <option value="dec">December</option>
+                </select>
+             </div>
+
+
+          <div id="wrapper-day" class="small-6 columns wrapper-first">
+            <select name="month" id="dayList">
+                  <option value="0"><h6>day</h6></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+          </div>
+
+          <div id="wrapper-hour" class = "small-4 columns left wrapper-second"/>
+            <select name="month" id="monthList">
+                  <option value="0"><h6>hour</h6></option>
+                  <option value="hr1">1</option>
+                  <option value="hr2">2</option>
+                  <option value="hr3">3</option>
+                  <option value="hr4">4</option>
+                  <option value="hr5">5</option>
+                  <option value="hr6">6</option>
+                  <option value="hr7">7</option>
+                  <option value="hr8">8</option>
+                  <option value="hr9">9</option>
+                  <option value="hr10">10</option>
+                  <option value="hr11">11</option>
+                  <option value="hr12">12</option>
+                </select>
+          </div>
+
+          <div id="wrapper-min" class="small-4 columns wrapper-second">
+            <select name="month" id="monthList">
+                  <option value="0"><h6>min</h6></option>
+                  <option value="min1">01</option>
+                  <option value="min2">02</option>
+                  <option value="min3">03</option>
+                  <option value="min4">04</option>
+                  <option value="min5">05</option>
+                  <option value="min6">06</option>
+                  <option value="min7">07</option>
+                  <option value="min8">08</option>
+                  <option value="min9">09</option>
+                  <option value="min10">10</option>
+                  <option value="min11">11</option>
+                  <option value="min12">12</option>
+                  <option value="min13">13</option>
+                  <option value="min14">14</option>
+                  <option value="min15">15</option>
+                  <option value="min16">16</option>
+                  <option value="min17">17</option>
+                  <option value="min18">18</option>
+                  <option value="min19">19</option>
+                  <option value="min20">20</option>
+                  <option value="min21">21</option>
+                  <option value="min22">22</option>
+                  <option value="min23">23</option>
+                  <option value="min24">24</option>
+                  <option value="min25">25</option>
+                  <option value="min26">26</option>
+                  <option value="min27">27</option>
+                  <option value="min28">28</option>
+                  <option value="min29">29</option>
+                  <option value="min30">30</option>
+                  <option value="min31">31</option>
+                  <option value="min32">32</option>
+                  <option value="min33">33</option>
+                  <option value="min34">34</option>
+                  <option value="min35">35</option>
+                  <option value="min36">36</option>
+                  <option value="min37">37</option>
+                  <option value="min38">38</option>
+                  <option value="min39">39</option>
+                  <option value="min40">40</option>
+                  <option value="min41">41</option>
+                  <option value="min42">42</option>
+                  <option value="min43">43</option>
+                  <option value="min44">44</option>
+                  <option value="min45">45</option>
+                  <option value="min46">46</option>
+                  <option value="min47">47</option>
+                  <option value="min48">48</option>
+                  <option value="min49">49</option>
+                  <option value="min50">50</option>
+                  <option value="min51">51</option>
+                  <option value="min52">52</option>
+                  <option value="min53">53</option>
+                  <option value="min54">54</option>
+                  <option value="min55">55</option>
+                  <option value="min56">56</option>
+                  <option value="min57">57</option>
+                  <option value="min58">58</option>
+                  <option value="min59">59</option>
+                  <option value="min60">60</option>
+                </select>
+          </div>
+
+          <div id="wrapper-ampm" class="small-4 columns wrapper-second">
+            <select name="month" id="monthList">
+                  <option value="0"><h6>am/pm</h6></option>
+                  <option value="am">AM</option>
+                  <option value="pm">PM</option>
+                </select>
+          </div>
+        </div>
+
+        <div class="wrapper-special">
+          <textarea placeholder="special notes"/></textarea>
+        </div>
+      </div>
+       <div class="inquire-submit">
+          <button class="main-nav" type="submit">Reserve Now</button>
+        </div>
+   </div> 
+       </div>
+
+   </div> 
+      <div class="success-inquire">
+        <button class="close-contact right" value="close"><i class="fa fa-times" style="font-size: 30px;color: rgb(0, 0, 0);"></i>
+            </button>
+              <h5> Your message is Successfully Sent. </h5>
+        
+    </div>
+     <div class="success-reserve">
+        <button class="close-contact right" value="close"><i class="fa fa-times" style="font-size: 30px;color: rgb(0, 0, 0);"></i>
+            </button>
+      <h5> Your reservation is Successfully placed </h5>
+       
+        <p> Thank you so much for reserving! </p>
+        
+
+    </div>
+   </body>
+<script src = "js/jquery-1.11.1.js"></script>
+  <script src = "js/menu.js"></script>
+   <script src = "js/sidr/jquery.sidr.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
+   <script src = "js/maps.js"></script>
+   <script type="text/javascript" src="js/index.js"></script>
+   <script>
+$(function() {
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    // Variables privadas
+    var links = this.el.find('.link');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  } 
+
+  var accordion = new Accordion($('#accordion'), false);
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+  $(document).ready(
+    function() {
+        $("button.main-na").click(function() {
+            $(".success-inquire").fadeIn(1000);
+        });
+        $("button.close-contact").click(function() {
+            $(".success-inquire").fadeOut(1000);
+        });
+    });
+ $(document).ready(
+    function() {
+        $("button.main-nav").click(function() {
+            $(".success-reserve").fadeIn(1000);
+        });
+        $("button.close-contact").click(function() {
+            $(".success-reserve").fadeOut(1000);
+        });
+    });
+
+
+</script>
+</html>

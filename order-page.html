@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/foundation.css"/>
+</head>
+<style type="text/css">
+  ul.selection li {
+    background: #fff;
+  }
+  ul.selection li div.tab-container:first-child{
+    border-right: 1px solid #CCC;
+  }
+</style>
+  <script type="text/javascript">
+
+$(document).ready(function() {
+
+  $(".content").hide();
+  $(".content:first, .wrapper-banner:first").show(); 
+
+  $("ul.selection li").click(function() {
+    var target = $(this).index(); 
+    $(".wrapper-banner").hide();
+      $(".wrapper-banner").eq(target).show();
+    $("ul.selection li").removeClass("active");
+    $(this).addClass("active");
+    $(".content").hide();
+    var activeTab = $(this).attr("rel"); 
+    $("#"+activeTab).fadeIn(); 
+  });
+});
+</script>
+<body>
+  <div class = "wrapper-header fixed" id = "wrapper-entree">
+      <div class="arrow-back"><a href="page-entree.html"><img src="images/icons/arrow-back.png" alt=""></a></div>
+      <div class= "cart"><a href="#"><img src="images/icons/cart1.png" alt=""></a></div>
+      <div class= "title"><h5>Order</h5></div>
+  </div>
+
+  <div class="wrapper-content">
+    <div id = "content-entree">
+      <div class="content-entree-summary">
+         <h6 class="entree-selected">SHRIMP SALAD</h6>
+         <div class="entree1-image column">
+           <img src="images/salad.jpg" alt=""/>
+           <div class="order-details">
+           <div class="small-3 quantity column"> Quantity</div>
+           <div class="small-10"><input type="text" class="order-quantity" value="2"></div>
+           <div class="order-price right">P 120</div>
+           </div>
+           <div id="wrapper-option" class = "small-12 columns left wrapper-second"/>
+            <select name="month" id="monthList">
+
+                  <option value="0"><h6>optional choices</h6></option>
+                  <option value="hr1">1</option>
+                  <option value="hr2">2</option>
+                  <option value="hr3">3</option>
+                  <option value="hr4">4</option>
+                  <option value="hr5">5</option>
+                </select>
+          </div>
+           <div id="wrapper-option" class = "small-12 columns left wrapper-second"/>
+            <select name="month" id="monthList">
+
+                  <option value="0"><h6>required choices</h6></option>
+                  <option value="hr1">1</option>
+                  <option value="hr2">2</option>
+                  <option value="hr3">3</option>
+                  <option value="hr4">4</option>
+                  <option value="hr5">5</option>
+                </select>
+          </div>
+           <div id="wrapper-option" class = "small-12 columns left wrapper-second"/>
+                  <textarea placeholder="special instruction"></textarea>
+          </div>
+          <div class="input-transaction order-page">
+            <a href="cart.html"><input class="order" type="submit" value="Order" ></a>
+        </div>
+         </div>
+         
+
+        <!-- Wrapper Entree Selection -->
+        
+
+          <!--End of Content Entree Summary -->
+      </div>
+    </div>
+  </div>
+
+  <script src = "js/jquery-1.11.1.js"></script>
+  <script src = "js/menu.js"></script>
+</body>
+</html>

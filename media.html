@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<title>Media</title>
+ <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/foundation.css"/>
+<style type="text/css">
+  div.wrapper-nav {
+    overflow-x: visible !important;
+  }
+  .masonry {
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+  }
+
+.masonry div {
+    display: inline-block;
+    width: 100%;
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+ <div class = "wrapper-header fixed">
+       <div class="menu-toggle-btn">
+   			 <span></span>
+  			  <span></span>
+   			 <span></span>
+ 		 </div>
+      <!-- <div class= "title"><img class="medium-8 small-4" src="images/icons/susilogo2.png" alt=""/></div> -->
+      <!-- <div class="row">
+          <div class="small-centered columns logo"><a href="home.html"><img src="images/icons/susilogo2.png" alt=""/></a></div>
+      </div> -->
+      <div class= "cart"><a href="cart.html"><img src="images/icons/cart1.png" alt=""></a></div>
+      <div class= "title"><h5>Media</h5></div>
+</div>
+
+<div id="content">
+    <div class="media-content">
+    </div>
+    <div class="mobile-nav">
+         <ul>
+            <a href="menu.html"><li>Menu</li></a>
+            <a href="botique.html"><li>Botique</li></a>
+            <a href="my-susi.html"><li>Feed Me</li></a>
+            <a href="media.html"><li>Media</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            
+        </ul>
+    </div>
+</div>
+ <div class="wrapper-nav">
+      <div class="tab-menu">
+        <ul class="selection small-12">
+         <li class="active small-6" rel="tab1"><div class="tab-container">Gallery</div></li>
+         <li class="small-6"rel="tab2"><div class="tab-container">Blog</div></li>
+        </ul>
+      </div>   
+    </div>
+
+   <div class="wrapper-media row" id = "wrapper-media1">
+          <div id="tab1" class="content">
+           <div class="masonry column">
+             <div class="item Drinks">
+                    <img src="http://susi.ph/dev/susi/sites/default/files/Signage_Window.jpg">
+              </div>
+              <div class="item Decor">
+                    <img src="http://susi.ph/dev/susi/sites/default/files/_001Signage.jpg">
+              </div>
+              <div class="item Decor">
+                     <img src="http://susi.ph/dev/susi/sites/default/files/_004Signage.jpg">
+              </div>
+              <div class="item Decor">
+                      <img src="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg">
+              </div>   
+              <div class="item Decor">
+                      <img src="images/media-1.jpg">
+              </div>  
+              <div class="item Decor">
+                      <img src="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg">
+              </div>     
+          </div>
+         </div>
+       <div id="tab2" class="content">
+      
+            <div class="blog-content column">
+              <img class="blog-image" src="images/blog.jpg" alt=""/>
+              <h5 class="blog-title">Top Chefs In Town</h5>
+              <div class="blog-header"><span class="author">Bianca Mabanta</span><span class="split">|</span><span class="date">Sept 1</span></div>
+            </div>
+       </div>
+
+   </div> 
+   </body>
+   <script>
+  jQuery(".masonry div").css( "height", function(v){
+    return Math.random() * 250 + 100 | 0 
+    });
+</script>
+<script src = "js/jquery-1.11.1.js"></script>
+  <script src = "js/menu.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src = "js/maps.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</html>

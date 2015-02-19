@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Entree Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/foundation.css"/>
+</head>
+<style type="text/css">
+  ul.selection li {
+    background: #fff;
+  }
+  ul.selection li div.tab-container:first-child{
+    border-right: 1px solid #CCC;
+  }
+  ul.selection li div.tab-container:last-child{
+
+  }
+</style>
+<body>
+  <div class = "wrapper-header fixed" id = "wrapper-entree">
+      <div class="arrow-back"><a href="menu.html"><img src="images/icons/arrow-back.png" alt=""></a></div>
+      <div class= "cart"><a href="#"><img src="images/icons/cart1.png" alt=""></a></div>
+      <div class= "title"><h5>ENTREE</h5></div>
+  </div>
+
+  <div class="wrapper-content">
+    <div id = "content-entree">
+      <div class="content-entree-summary">
+         <h6 class="entree-selected">SHRIMP SALAD</h6>
+         <div class="entree1-image column">
+           <img src="images/salad.jpg" alt=""/>
+         </div>
+         <div id="entree1-summary">
+           <p>
+             Lorem ipsum dolor sit amet, nam partem altera reprimique ea, mazim tritani mel ea, no eam iriure virtute voluptatibus. Ex noluisse detraxit mea, pri et eripuit laboramus.
+           </p>
+         </div>
+
+        <!-- Wrapper Entree Selection -->
+        <div class="wrapper-product no-nav">
+           <div class="wrapper-nav column no-nav">
+           <div class="tab-menu">
+             <ul class="selection" >
+                 <li class="active" rel="tab1"><div class="tab-container">Nutriton</div></li>
+                 <li rel="tab2"><div class="tab-container">Diet</div></li>
+                 <li rel="tab3" id = "ingtab3"><div class="tab-container" id = "ingdiv3">Ingredients</div></li>
+               </ul>
+          </div>   
+         </div>
+        </div>
+        <!-- End of Wrapper Entree Selection -->
+        <div class="wrapper-content no-nav">
+        <div id="tab1" class="content">
+          <div class="product-entree-nut">
+          <div id="entree1-nut1" class="entree-nut column small-6">
+            <ul class = "nut-details">
+              <div class="wrapper-details">
+                 <div class="details" id = "details-name">Fatty Acids</div>
+                 <div class="details" id = "details-num">70g</div>
+              </div>
+
+              <div class="wrapper-details">
+                <div class="details" id = "details-name">Potassium</div>
+                 <div class="details" id = "details-num">3500mg</div>
+              </div>
+
+              <div class="wrapper-details">
+                <div class="details" id = "details-name">Phosphorus</div>
+                 <div class="details" id = "details-num">700mg</div>
+              </div>
+            </ul>
+          </div>
+
+          <div id="entree1-nut2" class="entree-nut column small-6">
+            <ul class = "nut-details">
+              <div class="wrapper-details">
+                 <div class="details" id = "details-name">Fatty Acids</div>
+                 <div class="details" id = "details-num">70g</div>
+              </div>
+
+              <div class="wrapper-details">
+                <div class="details" id = "details-name">Potassium</div>
+                 <div class="details" id = "details-num">3500mg</div>
+              </div>
+
+              <div class="wrapper-details">
+                <div class="details" id = "details-name">Phosphorus</div>
+                 <div class="details" id = "details-num">700mg</div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div id="tab2" class="content">
+               <div class="product-entree-nut">
+                <div class="small-4 left">
+                    <img src="images/icons/nav1.png">
+                </div>
+                <div class="small-4 left">
+                    <img src="images/icons/nav2.png">
+                </div>
+                <div class="small-4 left">
+                    <img src="images/icons/nav3.png">
+                </div>
+            
+          
+              </div>
+        </div>
+        <div id="tab3" class="content">
+                  <div class="product-ingredients">
+                  <div class="ingredients-container">
+                    <img src="images/ingred.jpg"/>
+                    <img src="images/blog.jpg" alt=""><img src="images/salad.jpg" alt="">
+                  </div>
+                    <h5>Swipe for the list of ingredients </h5>
+                  </div>
+        </div>
+        
+
+         <!-- Wrapper Entree Price -->
+          <div id="entree1-price row" class="entree-price-submit">
+          <div class="wrapper-price small-6 medium-5 right">
+               <div class="entree1-price-num small-6 left" style="left: 7px;" id="entree1-price-num">
+                <span class="right" id="entree-price1">P80</span>
+              </div>
+              <div class="entree1-add small-6 right" id="entree1-add">
+                <a href="order-page.html"><img src="images/icons/add.png" alt=""></a>
+              </div>
+             </div>
+             <div class="clear-both"></div>
+          </div>
+          <!-- End of Wrapper Entree Price -->
+
+          </div>
+
+          <!--End of Content Entree Summary -->
+      </div>
+    </div>
+  </div>
+  <script src = "js/menu.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script src = "js/jquery-1.11.1.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
+   <script src = "js/maps.js"></script>
+</body>
+</html>
