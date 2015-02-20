@@ -20,6 +20,7 @@
 
   }
 </style>
+
 <body>
   <div class = "wrapper-header fixed" id = "wrapper-entree">
       <div class="arrow-back"><a href="menu.html"><img src="images/icons/arrow-back.png" alt=""></a></div>
@@ -41,17 +42,16 @@
          </div>
 
         <!-- Wrapper Entree Selection -->
-        <div class="wrapper-product no-nav">
-           <div class="wrapper-nav column no-nav">
-           <div class="tab-menu">
-             <ul class="selection" >
-                 <li class="active" rel="tab1"><div class="tab-container">Nutriton</div></li>
-                 <li rel="tab2"><div class="tab-container">Diet</div></li>
-                 <li rel="tab3" id = "ingtab3"><div class="tab-container" id = "ingdiv3">Ingredients</div></li>
-               </ul>
-          </div>   
-         </div>
-        </div>
+        <div class="wrapper-nav">
+      <div class="tab-menu">
+        <ul class="selection small-12">
+         
+         <li class="small-4 active" rel="tab1"><div class="tab-container">Nutritions</div></li>
+         <li class="small-4" rel="tab2"><div class="tab-container">Diet</div></li>
+         <li class="small-4" rel="tab3"><div class="tab-container">Ingredients</div></li>
+        </ul>
+      </div>   
+    </div>
         <!-- End of Wrapper Entree Selection -->
         <div class="wrapper-content no-nav">
         <div id="tab1" class="content">
@@ -111,13 +111,17 @@
               </div>
         </div>
         <div id="tab3" class="content">
-                  <div class="product-ingredients">
-                  <div class="ingredients-container">
-                    <img src="images/ingred.jpg"/>
-                    <img src="images/blog.jpg" alt=""><img src="images/salad.jpg" alt="">
-                  </div>
-                    <h5>Swipe for the list of ingredients </h5>
-                  </div>
+          <div id="ingredients-container" style="position: relative; top: 0px; left: 0px; width: 600px;
+          height: 300px;">
+          <!-- Slides Container -->
+            <div u="slides" class = "cont-slides1" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+            overflow: hidden;">
+              <div class = "img-slides1"><img u="image" src="images/ing3.jpg"/></div>
+              <div class = "img-slides1"><img u="image" src="images/salad.jpg"/></div>
+              <div class = "img-slides1"><img u="image" src="images/original.jpg"/></div>
+            </div>
+          </div>
+          <div class = "ingredients-text">Swipe for the List of Ingredients</div>
         </div>
         
 
@@ -145,7 +149,11 @@
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script src = "js/jquery-1.11.1.js"></script>
-   <script src="https://maps.googleapis.com/maps/api/js"></script>
-   <script src = "js/maps.js"></script>
+  <script src = "js/jquery.cycle2.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src = "js/maps.js"></script>
+  <script type="text/javascript" src="js/jssor.js"></script>
+  <script type="text/javascript" src="js/jssor.slider.js"></script>
+  <script src = "js/swipe.js"></script>
 </body>
 </html>
