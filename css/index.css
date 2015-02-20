@@ -24,24 +24,8 @@ div#wrapper-home-bg1 , .wrapper-all{
 .wrapper-all {
   height: 40%;
 }
-
-/*div.menu-nav ul {
-  list-style: none outside none;
-  margin: 22px 0 0 20px;
-  position: absolute;
-  width: 10%;
-}
-
-div.menu-nav ul li {
-  background: none repeat scroll 0 0 rgba(255, 126, 0, 1);
-  height: 10px;
-  margin-bottom: 8px;
-  width: 80px;
-}*/
-
 div.title {
   left: 35%;
-  /*padding-top: 3%;*/
   position: relative;
   width: 32%;
 }
@@ -69,90 +53,6 @@ div.cart {
   width: 12%;
 }
 
-/* Home Page --> Screen Resolution: 768x1024; */
-/*
-@media screen and (min-width: 768px) { 
-  div.menu-nav ul {
-    margin: 75px 0 0 35px;
-  }
-}
-
-
-@media screen and (min-width: 768px) { 
-  div.menu-nav ul li {
-    height: 18px;
-    margin-bottom: 10px;
-    width: 120px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div.cart {
-    left: 84%;
-    position: absolute;
-    top: 28%;
-    width: 12%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say1 {
-    text-align: center;
-    top: 50% !important;
- }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say1 {
-    text-align: center;
-    top: 30% !important;
- }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say1 h6{
-    font-size: 2em;
- }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say2 {
-   top: 104% !important;
- }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say2 h6 {
-   font-size: 1.5em;
- }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say3 {
-   top: 153% !important;
- }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say3 h6 {
-   font-size: 1.5em;
- }
-}
-
-/* End of Home Page */
-
-/* About and History Page */
-
-/* Feb 18 Edited for all About Page Sections */
-
-div.wrapper-nav {
-    /*background: none repeat scroll 0 0 #fff;
-    height: 15%;
-    overflow-x: scroll;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    width: 100%;*/
-}
 
 div.wrapper-nav ul.selection {
   list-style: none;
@@ -254,48 +154,7 @@ div.intro2-image {
   height: auto;
 }
 
-/*div.intro2-summary p {
-  letter-spacing: 0.1px;
-  font-family: gotham-light;
-  text-align: left;
-  line-height: 1.1em;
-}*/
 
-/* About Page --> Screen Resolution: 768x1024; */
-
-@media screen and (min-width: 768px) { 
-  div#wrapper-say-about {
-    text-align: center;
-    top: 35%;
-    width: 100%;
-  }s
-}
-
-@media screen and (min-width: 768px) { 
-  div#wrapper-say-about h6#say-about {
-    font-size: 2em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say-history {
-    text-align: center;
-    top: 35%;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div#wrapper-say-history h6#say-history {
-    font-size: 2.5em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div.history {
-    padding-bottom: 20px;
-  }
-}
 
 /* End of About and History Page */
 
@@ -360,23 +219,6 @@ input.button-hides {
   display: none;
 }
 
-/*@media screen and (min-width: 768px) { 
-  input.next {
-    font-size: 1.5em;
-    margin-left: 36% !important;
- }
-}*/
-
-/* End of Owner Page */
-
-/* Owner Profile Page */
-
-
-
-
-/* End of Owner Profile Page */
-
-/* Location Page */
 
 div#wrapper-location-bgs {
   height: auto;
@@ -417,10 +259,6 @@ ul.loc-list li:after {
   content: none !important; 
 }
 
-/* Feb 18 Edited: No Margin Bottom */
-ul#loc-list1 {
-  /*margin-bottom: 45px;*/
-}
 
 /* Feb 18 Edited : Kilometers; */
 
@@ -459,20 +297,6 @@ ul.loc-list li p.p-time {
   width: 100%;
   /*height: 40%;*/
   background-color: #CCC;
-}
-
-@media screen and (min-width: 768px) { 
-  ul.location li.location-desc {
-    padding-top: 5%;
-    border-bottom: 1px solid black;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div.intro1 {
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-  }
 }
 
 /* End of Location Page */
@@ -744,73 +568,26 @@ div.product-entree-ing ul li {
 }
 
 
-@media screen and (min-width: 768px) { 
-  div.arrow-back {
-    top: 26% !important;
-    width: 9% !important;
-  }
+
+/* Feb 19 and Feb 20*/
+
+div.cont-slides1 {
+
 }
 
-
-@media screen and (min-width: 768px) { 
-  div.title h6 {
-    font-size: 2em;
-  }
+div.img-slides1 img {
+  /*padding: 0 37px;*/
+  height: 275px !important;
+  width: 355px !important;
 }
 
-@media screen and (min-width: 768px) { 
-  div.entree-nut ul.nut-details div.wrapper-details {
-    font-size: 23px;
-    width: 410px;
-  }
-}
-
-@media screen and (min-width: 768px) { 
-  div.product-entree-diet ul {
-    list-style: none outside none;
-  }
-}
-
-@media screen and (min-width: 768px) { 
-  div.product-entree-nut {
-    padding-bottom: 170px;
-  }
-}
-
-@media screen and (min-width: 768px) { 
-  h5#entree-price1 {
-    padding-left: 40px;
-    font-size: 2em;
-  }  
-}
-
-/* Feb 19 */
-
-div.product-ingredients {
-  height: 340px;
-  width: 500px;
-  overflow: hidden;
-  position: relative;
-}
-
-div.ingredients-container {
-  float: left;
-  display: inline;
-  padding: 0;
-  margin: 0;
-  width: 1510px;
-
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  transform: translate(0, 0);
-}
-
-div.ingredients-container img {
-  padding: 0;
-  margin: 0;
-  width: 500px;
-  height: 340px;
+div.ingredients-text {
+  color: #000;
+  font-family: gotham-light;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -25px;
 }
 
 
@@ -844,36 +621,6 @@ div.wrapper-media ul {
   margin: 0 !important;
 }
 
-@media screen and (min-width: 768px) { 
-  div#wrapper-media1 {
-    overflow: scroll;
-  }  
-}
-
-@media screen and (min-width: 768px) { 
-  div#media1 {
-    margin-left: 50px;
-  }  
-}
-
-@media screen and (min-width: 768px) { 
-  div#media2 {
-    margin-right: 50px;
-  }  
-}
-
-@media screen and (min-width: 768px) { 
-  div#title-media {
-    padding-top: 4%;
-    width: 32%;
-  }  
-}
-
-@media screen and (min-width: 768px) { 
-  div#title-media h6 {
-    font-size: 3em;
-  }  
-}
 
 
 /* Blog Section */
@@ -963,50 +710,6 @@ div.wrapper-days1 {
   margin: 0 !important;
 }
 
-/* Edit Layout for the Month Day Hour Min Inputs */
-
-/* Comment this if input[text] was selected instead */
-
-/*div.wrapper-days1 input {
-  margin: 0 !important;
-}
-
-div.wrapper-first, div.wrapper-second {
-  padding: 0 !important;
-}
-
-div#wrapper-month input {
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-}
-
-div#wrapper-day input {
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  border-top-left-radius: 0px !important;
-  border-left: 0 !important;
-}
-
-div#wrapper-hour input {
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-}
-
-div#wrapper-min input {
-  border-radius: 0 !important;
-}
-
-div#wrapper-ampm input {
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  border-top-right-radius: 0px !important;
-}
-*/
-
-/* With a DropDown Option Values */
 
 div.wrapper-first, div.wrapper-second {
   padding: 0 !important;

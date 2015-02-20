@@ -148,3 +148,27 @@ div.wrapper-nav ul.selection li {
     padding: 13px 0px 7px 20px;
     font-family: gotham-light;
 }
+#wrapper-say2 {
+/* background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.57); */
+opacity: 0.8;
+filter: alpha(opacity=80);
+bottom: 0px;
+width: 100%;
+position: absolute;
+padding: 10px;
+background: #fff;
+}
+h6.title {
+text-transform: uppercase;
+font-size: 15px;
+font-family: gotham-book;
+color: #000;
+margin-left: 15px;
+margin-bottom: -8px;
+}
+h6.sub-title {
+font-size: 13px;
+font-family: gotham-light;
+color: #000;
+margin-left: 15px;
+}
