@@ -165,6 +165,7 @@ h5.intro1-owner {
   color: rgba(243, 100, 9, 1);
   text-align: center;
   font-size: 15px; 
+  text-transform: uppercase;
 }
 
 /* Feb 18 Edited: Owners Page */
@@ -173,6 +174,17 @@ p.owner-summary {
   font-family: gotham-light;
   font-size: 13px;
   text-align: justify;
+}
+
+/* Feb 21 */
+
+div.overall-wrapper-profile {
+  /*overflow: hidden;
+  width: 320px;*/
+}
+
+div#identity-profile2, div#identity-profile3 {
+  
 }
 
 /* Feb 19 */
@@ -185,6 +197,7 @@ div.owners-profile {
 div.wrapper-profile {
   position: relative;
   width: 500px;
+  overflow: hidden;
 }
 
 /* Feb 19 For the Next and Previous Buttons */

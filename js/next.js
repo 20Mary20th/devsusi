@@ -6,6 +6,11 @@
   var hidenext = $('input#owner-next');
   var hideprev = $('input#owner-previous');
   hideprev.addClass('button-hides');
+
+  $('div.overall-wrapper-profile').css({
+    'width' : win,
+    'overflow' : 'hidden'
+  });
   
   $('div.wrapper-profile').css({
    'width' : positionlimit // 2304
