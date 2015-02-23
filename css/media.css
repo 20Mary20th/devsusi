@@ -3,7 +3,7 @@
        margin-top: 20%;
     }
     div.inquire-submit button{
-       margin-top: 30%;
+       margin-top: 25%;
     }
 }
 @media only screen and (min-width : 380px) and (max-width : 480px) {
@@ -12,5 +12,21 @@
     }
      div.inquire-submit button{
        margin-top: 20%;
+    }
+}
+@media only screen and (min-width : 520px) and (max-width : 750px) {
+    div.order-submit{
+       margin-top: 20%;
+    }
+    div.inquire-submit button{
+       margin-top: 20%;
+    }
+}
+@media only screen and (min-width : 900px) and (max-width : 1500px) {
+    div.order-submit{
+       margin-top: 10px;
+    }
+    div.inquire-submit button{
+       margin-top: 10px;
     }
 }
