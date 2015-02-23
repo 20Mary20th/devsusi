@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/foundation.css"/>
+  <link rel="stylesheet" href="css/checkout.css">
+   <link rel="stylesheet" href="css/jquery.sidr.light.css"/>
+
+   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src = "js/jquery-1.11.1.js"></script>
+  <script src = "js/maps.js"></script>
+</head>
+<body>
+ <div class = "wrapper-header fixed">
+     <div class="arrow-back"><a href="page-entree.html"><img src="images/icons/arrow-back.png" alt=""></a></div>
+      <div class= "title"><h5>Cart</h5></div>
+      <div class= "cart"><a href="#"><img src="images/icons/cart1.png" alt=""></a></div>
+  </div>
+  <div class="wrapper-cart">
+ <div class="product-container small-12">
+      <div class="image-container small-6">
+      <img src="images/product-1.jpg"/>
+       </div>
+       <h5 class="small-5 product-title">Shrimp Salad</h5> 
+           <div class="small-3 price" data-price="150">P 150</div>
+        <input type="text" class="quantity" value="3">
+       <span class="quantity-container">P <span class="quantity-price"></span></span>
+      <button class="remove small-6">Remove</button>
+
+   </div>
+ <div class="product-container small-12">
+      <div class="image-container small-6">
+      <img src="images/product-1.jpg"/>
+       </div>
+       <h5 class="small-5 product-title">Shrimp Salad</h5> 
+      <div class="small-3 price" data-price="150">P 150</div>
+      <input type="text" class="quantity" value="1">
+       <span class="quantity-container">P <span class="quantity-price"> </span></span>
+      <button class="remove small-6">Remove</button>
+
+   </div>
+
+   <div class="product-total column small-12">
+      <ul>
+      <li>subtotal <div class="price-total">P <span></span></div>
+      </li>
+      <li>delivery <div class="price-delivery" data-delivery="150">P 150</div>
+      </li>
+      </ul>
+   </div>
+   <div class="total-amount column small-12">
+   <div class="total-amount-price">Total <span></span></div>
+   </div>
+  </div>
+  <div class="input-transaction">
+    <textarea placeholder="special instruction"></textarea>
+    <a href="checkout.html"><input class="checkout" type="submit" value="Checkout" ></a>
+  </div>
+   <div class="mobile-nav">
+      <div class="white">
+        <button class="close right" value="close"><i class="fa fa-times" style="font-size: 30px;color: rgb(0, 0, 0);"></i>
+            </button>
+      <h5> Your Cart is Empty </h5>
+        <p>Go back to Menu page<br>
+
+        <a href="menu.html" class="ok">OK</a>
+         </p>
+        
+         </div>
+    </div>
+  <script>
+  function compute () {
+     var price = 0 ;
+     var del = $(".price-delivery").data('delivery');
+    
+     
+      $(".product-container").each(function(){
+        quantity = $(this).find(".quantity").attr('value');
+        price  +=  ($(this).find(".price").data('price') * quantity );
+
+        $(this).find(".quantity-price").text($(this).find(".price").data('price') * quantity);
+      });
+
+      $('.price-total span').text(price);
+
+      $('.total-amount-price span').text(price + del);
+      
+      if (price == 0) {
+        $('.price-delivery').text('P 0');
+        $('.total-amount-price span').text('P 0');
+
+        $('.mobile-nav').fadeIn(1000);
+        $("button.close").click(function() {
+            $(".mobile-nav").fadeOut(1000);
+        });
+        // var r = confirm("Cart Empty Would You like to go to Menu page?");
+        //     if (r == true) {
+        //         window.location.href= 'menu.html';
+        //     } else {
+        //         x = "You pressed Cancel!";
+        //     }
+                  }
+
+
+  }
+  compute()
+
+      $(".remove").click(function(){
+            var produclenght = $('.product-container').length;
+            if (produclenght != 0) {
+              $(this).parent().remove();
+            }
+           
+            compute()
+      });
+
+
+
+  </script>
+  <script src = "js/jquery-1.11.1.js"></script>
+  <script src = "js/menu.js"></script>
+   <script src = "js/sidr/jquery.sidr.min.js"></script>
+</body>
+</html>

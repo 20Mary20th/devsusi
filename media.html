@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<title>Media</title>
+ <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/foundation.css"/>
+<style type="text/css">
+  div.wrapper-nav {
+    overflow-x: visible !important;
+  }
+  .masonry {
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+  }
+
+.masonry div {
+    display: inline-block;
+    width: 100%;
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+<!-- Header -->
+      <header id="header">
+        <div class="logo container">
+          <div>
+            <h1><a href="home.html" id="logo">Media</a></h1>
+          </div>
+          <div class= "cart"><a href="cart.html"><img src="images/icons/cart1.png" alt=""></a></div>
+        </div>
+
+      </header>
+
+    <!-- Nav -->
+       <nav id="nav" class="skel-layers-fixed">
+       <ul>
+          <li class="current"><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="botique.html">Boutique</a></li>
+          <li><a href="my-susi.html">Feed Me</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+ <div class="wrapper-nav">
+      <div class="tab-menu">
+        <ul class="selection small-12">
+         <li class="active small-6" rel="tab1"><div class="tab-container">Gallery</div></li>
+         <li class="small-6"rel="tab2"><div class="tab-container">Blog</div></li>
+        </ul>
+      </div>   
+    </div>
+
+   <div class="wrapper-media" id = "wrapper-media1">
+          <div id="tab1" class="content">
+           <div class="masonry column">
+             <div class="item Drinks">
+                    <img src="http://susi.ph/dev/susi/sites/default/files/Signage_Window.jpg">
+              </div>
+              <div class="item Decor">
+                    <img src="http://susi.ph/dev/susi/sites/default/files/_001Signage.jpg">
+              </div>
+              <div class="item Decor">
+                     <img src="http://susi.ph/dev/susi/sites/default/files/_004Signage.jpg">
+              </div>
+              <div class="item Decor">
+                      <img src="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg">
+              </div>   
+              <div class="item Decor">
+                      <img src="images/media-1.jpg">
+              </div>  
+              <div class="item Decor">
+                      <img src="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg">
+              </div>     
+          </div>
+          <div class="clear-both"></div>
+         </div>
+       <div id="tab2" class="content">
+      
+            <div class="blog-content column">
+              <img class="blog-image" src="images/blog.jpg" alt=""/>
+              <h5 class="blog-title">Top Chefs In Town</h5>
+              <div class="blog-header"><span class="author">Bianca Mabanta</span><span class="split">|</span><span class="date">Sept 1</span></div>
+            </div>
+            <div class="clear-both"></div>
+       </div>
+
+   </div> 
+   </body>
+   <script>
+  jQuery(".masonry div").css( "height", function(v){
+    return Math.random() * 250 + 100 | 0 
+    });
+</script>
+<script src = "js/jquery-1.11.1.js"></script>
+  <script src = "js/menu.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src = "js/maps.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+   <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Your stuff -->
+ 
+<!-- Include Sidr bundled CSS theme -->
+<link rel="stylesheet" href="css/jquery.sidr.light.css">
+</head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: .55em;
+  color: black;
+  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/shattered.png);
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: .95em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(217, 217, 217, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 184, 184, 0.5);
+  box-shadow: inset 0.05em 0.05em 0 rgba(0, 0, 0, 0.1), inset 0 -0.05em 0 rgba(0, 0, 0, 0.07);
+}
+
+/* dummy content */
+.content {
+  float: left;
+  font: 1em 'Open Sans', sans-serif;
+  margin: .75em 0 0 0;
+  transition: margin .3s ease-in-out;
+}
+.content > p {
+  margin: .25em 0 .75em 0;
+}
+
+/* Advanced Checkbox Hack */
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  display: none;
+  width: 2em;
+  height: 2.25em;
+  padding: .35em;
+  font-size: 1.1em;
+  color: #fff;
+  transition: color .3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* big screens */
+nav[role="off-canvas"] {
+  position: relative;
+  width: 50em;
+  margin: 0 auto;
+  transition-duration: .3s, .5s;
+  transition-timing-function: ease-in-out;
+  transition-property: left, opacity, box-shadow;
+}
+nav[role="off-canvas"] a {
+  color: #fff;
+  text-decoration: none;
+  font: 1.4em 'Open Sans', sans-serif;
+  transition: color .3s ease-in-out;
+  display: table-cell;
+  vertical-align: middle;
+}
+nav[role="off-canvas"] ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+nav[role="off-canvas"] ul > li {
+  float: left;
+  padding: .55em .55em;
+  width: 8em;
+  height: 8em;
+  margin: .5em;
+  opacity: .8;
+  text-transform: uppercase;
+  display: table;
+  background: rgba(247, 52, 8, 0.65);
+  cursor: pointer;
+  text-align: center;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: box-shadow, color, opacity, padding-left;
+  cursor: pointer;
+}
+nav[role="off-canvas"] ul > li:hover {
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.95);
+}
+nav[role="off-canvas"] ul > li:hover > a {
+  color: #fff;
+}
+nav[role="off-canvas"] ul > li:nth-child(2) {
+  background: rgba(247, 183, 8, 0.65);
+}
+nav[role="off-canvas"] ul > li:nth-child(3) {
+  background: rgba(32, 247, 8, 0.65);
+}
+nav[role="off-canvas"] ul > li:nth-child(4) {
+  background: rgba(8, 231, 247, 0.65);
+}
+nav[role="off-canvas"] ul > li:nth-child(5) {
+  background: rgba(8, 72, 247, 0.65);
+}
+
+/* small screens */
+@media screen and (max-width: 44em) {
+  html,
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .content {
+    margin: 2.5em .5em 0 .5em;
+  }
+
+  nav[role="off-canvas"] {
+    position: absolute;
+    top: 3em;
+    left: -20em;
+    width: 20em;
+    opacity: 0;
+  }
+  nav[role="off-canvas"] ul > li {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  nav[role="off-canvas"] ul > li:hover {
+    box-shadow: inset 0 0 0 0.15em rgba(255, 255, 255, 0.45);
+  }
+
+  label {
+    display: block;
+  }
+
+  label:after {
+    position: absolute;
+    right: .25em;
+    top: 0;
+    content: "\2261";
+    font-size: 1.8em;
+  }
+
+  label:hover,
+  input:checked ~ label {
+    color: #000;
+  }
+
+  input:checked ~ nav[role="off-canvas"] {
+    opacity: 1;
+    left: 0;
+    box-shadow: -30em 0 0 30em rgba(0, 0, 0, 0.3);
+  }
+  input:checked ~ nav[role="off-canvas"] ul > li {
+    padding: .55em .55em .55em 1.5em;
+  }
+  input:checked ~ nav[role="off-canvas"] ul > li:hover {
+    padding-left: 3.5em;
+  }
+  input:checked ~ nav[role="off-canvas"] ul > li:after {
+    position: absolute;
+    right: .25em;
+    content: "\203A";
+    font: bold 1.4em sans-serif;
+    color: inherit;
+  }
+
+  input:checked ~ .content {
+    margin-left: 20.5em;
+    margin-right: -20.5em;
+  }
+}
+
+</style>
+<body>
+<!-- Your stuff -->
+
+
+ 
+<input type="checkbox" id="menu">
+<label for="menu" onclick></label>
+
+
+<nav role="off-canvas">
+    <ul>
+        <li><a href="#">Stream</a></li>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+<p>Fap cray leggings wes anderson, freegan shoreditch bespoke locavore echo park.  Pinterest post-ironic sustainable letterpress, leggings echo park gentrify kale chips VHS cosby sweater flexitarian chillwave aesthetic.  Master cleanse small batch sustainable, 3 wolf moon butcher readymade locavore quinoa.  Hella sartorial mcsweeney's, squid banh mi locavore vice four loko brooklyn next level stumptown.  Fap stumptown fingerstache mustache.  Forage 3 wolf moon iphone, williamsburg bushwick mcsweeney's yr pour-over photo booth sustainable swag chillwave terry richardson.  Lo-fi direct trade  yr banh mi butcher, fingerstache odd future flexitarian thundercats mumblecore selvage retro.</p><p>Twee jean shorts whatever fixie.  Carles wolf portland whatever beard mustache authentic lo-fi, cosby sweater squid raw denim leggings gluten-free.  Wayfarers ethical tumblr, fingerstache whatever messenger bag hella letterpress polaroid.  Forage pitchfork pop-up, four loko letterpress whatever pickled mlkshk polaroid gluten-free occupy mcsweeney's narwhal master cleanse typewriter.  American apparel chambray wayfarers, selvage raw denim pork belly fixie Austin hoodie pickled skateboard fap messenger bag four loko cred.  Skateboard terry richardson thundercats, high life polaroid american apparel four loko pitchfork.  Cred street art art party vegan.</p><p>8-bit flexitarian wes anderson seitan, pinterest skateboard salvia you probably haven't heard of them squid pitchfork.  Umami jean shorts gluten-free williamsburg, gentrify put a bird on it vice vegan street art fap VHS narwhal wes anderson authentic.  Tofu shoreditch you probably haven't heard of them helvetica odd future hella.  Mustache pickled ennui, banksy pinterest terry richardson godard art party sustainable ethnic flexitarian four loko umami aesthetic.  Lomo wolf hoodie wes anderson cliche, biodiesel organic american apparel freegan mumblecore.  Brunch thundercats freegan iphone, pop-up readymade bushwick street art tattooed PBR stumptown.  Hoodie Austin food truck cosby sweater, shoreditch lomo you probably haven't heard of them chambray leggings irony.</p><p>Photo booth keffiyeh iphone occupy.  Vice messenger bag occupy pitchfork butcher.  Hoodie truffaut carles swag, before they sold out umami pop-up typewriter beard iphone sustainable.  Blog Austin mcsweeney's pork belly, carles keffiyeh put a bird on it keytar gastropub seitan bespoke fanny pack 8-bit narwhal.  Mlkshk echo park lomo, quinoa trust fund keytar chillwave cosby sweater mixtape pour-over master cleanse iphone food truck mcsweeney's kogi.  Mumblecore lomo keffiyeh, raw denim swag leggings ennui authentic mixtape vice banh mi marfa street art.  Umami vice fixie put a bird on it polaroid artisan, godard bushwick.</p><p>Aesthetic wolf wayfarers before they sold out sustainable semiotics next level, readymade pinterest seitan fixie.  Portland retro mustache photo booth kale chips brunch thundercats synth.  Truffaut tumblr blog flexitarian artisan, tofu brunch umami lo-fi pickled put a bird on it odd future 3 wolf moon salvia.  Leggings fingerstache pinterest, skateboard tumblr four loko sriracha PBR.  Mumblecore fanny pack polaroid vinyl, swag twee odd future.  Mixtape sustainable scenester before they sold out semiotics lomo quinoa, butcher odd future PBR put a bird on it.  High life vegan chillwave, next level american apparel dreamcatcher fingerstache.</p><p>Tattooed viral fixie odd future, craft beer jean shorts cliche single-origin coffee.  Pork belly art party lo-fi iphone mumblecore.  Skateboard american apparel bushwick tattooed, salvia retro fixie carles pop-up leggings.  Odd future readymade cliche keytar, next level pinterest street art polaroid sartorial banksy small batch.  Truffaut food truck salvia cray farm-to-table.  Terry richardson occupy sartorial post-ironic bushwick pinterest, fixie american apparel master cleanse marfa cred.  Farm-to-table marfa fingerstache scenester wes anderson.</p><p>Seitan freegan hella fap bushwick, keffiyeh four loko leggings chillwave typewriter high life.  Keytar marfa VHS craft beer lo-fi PBR.  Bushwick kogi readymade, pour-over biodiesel bicycle rights beard blog locavore photo booth aesthetic.  Cray sriracha +1, butcher dreamcatcher salvia mlkshk wayfarers umami.  Ethnic fap sustainable, master cleanse wes anderson pitchfork vinyl polaroid gentrify umami.  Stumptown farm-to-table wes anderson, VHS flexitarian fixie sartorial dreamcatcher chambray banh mi wayfarers.  Typewriter +1 semiotics jean shorts echo park mcsweeney's.</p><p>Hoodie direct trade  bushwick ennui truffaut, authentic wolf mlkshk put a bird on it typewriter.  Raw denim whatever gluten-free, sustainable twee narwhal hella polaroid mixtape flexitarian cosby sweater readymade hoodie etsy.  Food truck twee polaroid, jean shorts readymade retro wolf raw denim 3 wolf moon pinterest godard sriracha blog cray.  Cosby sweater PBR hoodie pitchfork.  Iphone raw denim seitan trust fund, bespoke swag biodiesel wolf single-origin coffee bushwick quinoa semiotics.  Trust fund craft beer occupy, wes anderson tattooed pinterest tumblr.  Mcsweeney's american apparel blog mustache.</p></div>
+</div>
+ 
+<!-- Include jQuery -->
+<script src="jquery.js"></script>
+<!-- Include the Sidr JS -->
+<script src="js/jquery.sidr.min.js"></script>
+</body>
+</html> 

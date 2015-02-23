@@ -1,0 +1,983 @@
+h1.banner-susi {
+  position: relative;
+  font-size: 2em;
+  color: #000;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+}
+
+div.wrapper-bgs {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+div.wrapper-all img {
+  margin: 0;
+  top: 0;
+  position: relative;
+}
+
+div#wrapper-home-bg1 , .wrapper-all{
+  height: 30%;
+}
+.wrapper-all {
+  height: 40%;
+}
+div.title {
+  left: 35%;
+  position: relative;
+  width: 32%;
+}
+
+div.title h6 {
+  font-family: gotham-book;
+  font-size: 1.5em;
+  margin: 0 !important;
+}
+
+h6#home-say1 {
+  font-size: 1.5em;
+}
+
+div.title img {
+  margin: 0px;
+  left: 29%;
+  top: 0%;
+}
+
+div.cart {
+  left: 85%;
+  position: absolute;
+  top: 15%;
+  width: 12%;
+  z-index: 999999;
+}
+
+
+div.wrapper-nav ul.selection {
+  list-style: none;
+  margin-left: 0px !important;
+}
+
+div.wrapper-nav ul.selection li {
+    float: left;
+    padding: 10px 20px 5px;
+    text-align: center;
+}
+
+div.wrapper-nav ul.selection li a {
+  color: #000;
+  font-family: gotham-book;
+  padding: 12px;
+}
+
+li.current {
+  border-bottom: 2px solid rgba(243, 100, 9, 1);
+}
+
+li.current a {
+  color: rgba(243, 100, 9, 1) !important;
+}
+
+/* Feb 21 */
+div.wrapper-content {
+  width: 100%;
+  height: auto !important;
+  background: #fff;
+}
+
+div.content, div.intro1, div.intro2, div.history {
+  width: 100%;
+  margin: 0;
+  background: #fff;
+}
+
+div#wrapper-say-about {
+  padding: 0 10px;
+  top: 25%;
+}
+
+h6#say-about {
+  font-size: 1.5em;
+}
+
+div#wrapper-say-history {
+  text-align: center;
+  top: 25%;
+  width: 100%;
+}
+
+div#wrapper-say-history h6#say-history {
+  font-size: 2em;
+}
+
+div.intro1 p, div.intro2 p {
+  margin: 15px 15px 0 15px;
+  letter-spacing: 0.1px;
+  font-family: gotham-light;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 13px;
+}
+
+div.history {
+  padding: 0 20px;
+}
+
+div#summary-history {
+  padding-top: 10px;
+}
+
+div.history p, div#summary-history p {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+p.about-summary {
+  text-align: left !important;
+  margin-top: 0px !important;
+}
+
+/* Feb 18 Edited: Owners Page */
+
+div.owners1-intro {
+  padding: 10px;
+}
+
+div.intro2-desc {
+  font-family: gotham-light;
+  letter-spacing: 0.1px;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
+
+div.intro2-image {
+  height: auto;
+}
+
+
+
+/* End of About and History Page */
+
+/* Owner Page */
+
+h5.intro1-owner {
+  font-family: gotham-book;
+  color: rgba(243, 100, 9, 1);
+  text-align: center;
+  font-size: 15px; 
+  text-transform: uppercase;
+}
+
+/* Feb 18 Edited: Owners Page */
+
+p.owner-summary {
+  font-family: gotham-light;
+  font-size: 13px;
+  text-align: justify;
+}
+
+/* Feb 21 */
+
+div.overall-wrapper-profile {
+  /*overflow: hidden;
+  width: 320px;*/
+}
+
+div#identity-profile2, div#identity-profile3 {
+  
+}
+
+/* Feb 19 */
+
+div.owners-profile {
+  float: left;
+}
+
+/* Feb 19 For the Next and Previous Buttons */
+div.wrapper-profile {
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+}
+
+/* Feb 19 For the Next and Previous Buttons */
+div.owners-buttons {
+  text-align: center;
+}
+
+/* Feb 19 For the Next and Previous Buttons */
+input.previous {
+    background: none repeat scroll 0px 0px #F36409 !important;
+    border: 0px solid #000 !important;
+    margin-top: 10% !important;
+    padding: 2% 9% !important;
+    border-radius: 10px !important;
+    font-size: 1.2em !important;
+    color: #FFF !important;
+    width: auto !important;
+}
+
+/* Feb 19 For the Next and Previous Buttons */
+input.next {
+    background: none repeat scroll 0px 0px #F36409 !important;
+    border: 0px solid #000 !important;
+    margin-top: 10% !important;
+    padding: 2% 15% !important;
+    border-radius: 10px !important;
+    font-size: 1.2em !important;
+    color: #FFF !important;
+    width: auto !important;
+}
+
+input.button-hides {
+  display: none !important;
+}
+
+
+div#wrapper-location-bgs {
+  height: auto;
+}
+
+/* Feb 18 Edited: No specified width in Location; */
+
+div.location {
+  /*width: 95%;*/
+  position: relative;
+}
+
+/* Feb 18 Edited: Width and Padding; */
+div.location ul {
+  width: 100%;
+  padding: 0 14px 12px;
+}
+
+
+ul.loc-list {
+  list-style: none;
+  margin-bottom: 0px;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Feb 18 Edited: Removing border bottoms on Location */
+ul.loc-list li {
+  border-bottom: none !important;
+  padding-top: 0 !important;
+}
+
+ul.loc-list li.loc-descs {
+  padding-left: 4px;
+}
+
+/* Feb 18 Edited: Removing content > on Location */
+ul.loc-list li:after {
+  content: none !important; 
+}
+
+
+/* Feb 18 Edited : Kilometers; */
+
+div.wrapper-km h6 {
+  color: #e64d06;
+  font-family: gotham-light;
+}
+
+/* Feb 18 Edited: Edited font-size to 17px for h6 tags */
+
+ul.loc-list li h6 {
+  font-family: gotham-book;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+/* Feb 18 Edited: Edited font-size to 17px for p tags */
+
+ul.loc-list li p {
+  font-size: 13px;
+  line-height: 5px;
+  font-family: gotham-light;
+  margin-bottom: 0 !important;
+}
+
+ul.loc-list li p.p-time {
+  margin-bottom: 40px;
+}
+
+#map-canvas {
+  width: 100%;
+  /*height: 40%;*/
+  background-color: #CCC;
+  height: 150px;
+}
+
+/* End of Location Page */
+
+/* Menu Page */
+
+div#content-entree {
+  height: auto;
+  width: 100%;
+}
+
+/* Menu Page Images */
+
+div.entree {
+ border-bottom: 1px solid black;
+ height: 20%;
+ margin-bottom: 7%;
+ width: 95%;
+ margin: 0 10px;
+}
+
+div.entree-image {
+  height: 20%;
+}
+
+div.entree-image img {
+  width: 100%;
+}
+
+/* Container for Menu Description */
+/* This layout for each menus provided will be the same */
+
+div.entree-desc {
+  width: 100%;
+}
+
+div.entree-title {
+  padding: 0;
+}
+
+div.entree-title h6 {
+  font-size: 24px;
+  margin-bottom: 0 !important;
+  padding-top: 33px !important;
+  line-height: 0.5em;
+}
+h6.e-title {
+  font-size: 20px;
+  font-family: gotham-book;
+}
+
+div.entree-title ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+div.entree-title ul li {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 23px;
+  font-family: gotham-light;
+}
+
+div.entree-price-submit {
+  position: relative;
+  border-top: 2px solid #ccc;
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+div.price-num h5 {
+  font-size: 2em;
+  font-family: gotham-book;
+  padding-left: 45px;
+  padding-top: 25px;
+}
+
+div.price-num  {
+  margin-right: 20px;
+}
+
+div.entree-add {
+  padding: 0 !important;
+}
+
+div.entree-add img {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+/* End of Menu Page */
+@media screen and (min-width: 768px) { 
+  div.entree-price {
+    left: 78%;
+  }
+}
+
+/* End of Menu Page */
+
+
+
+/* Entree Page Content */
+
+div#wrapper-entree {
+  border-bottom: 1px solid #CFCFCF;
+  padding-bottom: 20px;
+}
+
+div.arrow-back {
+  position: absolute;
+  width: 13%;
+}
+
+div.content-entree-summary {
+  text-align: center;
+  width: 100%;
+}
+
+h6.entree-selected {
+  font-family: gotham-book;
+  font-size: 17px;
+  color: rgba(243, 100, 9, 1);
+}
+
+div#entree1-summary {
+  text-align: left;
+}
+
+div#entree1-summary p {
+  margin: 10px 25px 0;
+  font-family: gotham-light;
+  line-height: 1.3em;
+}
+
+div.wrapper-product {
+  background: none repeat scroll 0 0 #fff;
+  height: 15%;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+div.wrapper-product ul {
+  list-style: none;
+  margin: 0 0 0 18px !important
+}
+
+div.wrapper-product ul li {
+  float: left;
+  padding: 0 15px;
+}
+
+div.wrapper-product ul li a {
+  color: #000;
+  font-family: gotham-light;
+  font-size: 1.2em;
+}
+
+li#ingtab3 {
+  padding-left: 4px;
+  padding-right: 2px;
+}
+
+li#ingtab3:after {
+  width: 0 !important;
+}
+
+li#ingtab3 div#ingdiv3 {
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+
+
+/* Description : Nutrition, Diet, Ingredients of Each Products; */
+
+div.product-entree-nut {
+  padding-bottom: 120px;
+  width: 100%;
+  height: 100%;
+  /*border-bottom: 1px solid #000;*/
+}
+
+div.entree-nut {
+  height: 100%;
+  text-align: left;
+}
+
+div#entree1-nut1 {
+  float: left;
+}
+
+div#entree1-nut2 {
+  float: right;
+}
+
+div.entree-nut ul.nut-details {
+  font-family: gotham-light;
+  font-size: 13px;
+  list-style: none outside none;
+  margin: 0 !important;
+  padding: 0 0px;
+}
+
+div.entree-nut ul.nut-details div.wrapper-details {
+  border-bottom: 1px solid #C9C9C9;
+  padding: 7px;
+  font-size: 10px;
+}
+
+div.entree-nut ul.nut-details div#details-name {
+  float: left;
+}
+
+div.entree-nut ul.nut-details div#details-num {
+  text-align: right;
+}
+
+div.entree-nut ul.nut-details li#details-num {
+  padding-left: 10px;
+}
+
+
+/* Diet Wrapper Content*/
+
+div.product-entree-diet {
+ margin: 0px; 
+}
+
+div.product-entree-diet ul {
+  list-style: none outside none;
+  margin: 0 !important;
+}
+
+div.product-entree-diet ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+
+div.wrapper-price {
+  margin-top: 3%;
+  padding-left: 5%;
+}
+
+h5#entree-price1 {
+  font-family: gotham-book;
+  font-size: 1.5em;
+  /*padding-left: 60px;*/
+
+}
+
+/* Ingredients Wrapper Content */
+
+div.product-entree-ing {
+  overflow-x: scroll;
+}
+
+div.product-entree-ing ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+div.product-entree-ing ul li {
+  float: left;
+}
+
+
+
+/* Feb 19 and Feb 20*/
+
+div.cont-slides1 {
+
+}
+
+div.img-slides1 img {
+  /*padding: 0 37px;*/
+  height: 275px !important;
+  width: 355px !important;
+}
+
+div.ingredients-text {
+  color: #000;
+  font-family: gotham-light;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -25px;
+}
+
+
+/* End of Entree Page Content */
+
+
+/* Media Page */
+
+div#title-media h6 {
+  font-size: 2.5em;
+}
+
+div.nav-media ul {
+  list-style: none outside none;
+  margin: 0 !important;
+}
+
+div.nav-media ul li {
+  float: left;
+  margin-left: 75px;
+}
+
+div.nav-media ul li a {
+  color: #000;
+  font-size: 1.5em;
+  font-family: gotham-book;
+}
+
+div.wrapper-media ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+
+
+/* Blog Section */
+
+div.blog {
+  border-bottom: 1px solid #000;
+  padding: 10px;
+}
+
+div.blog-summary div.desc-author, div.blog-summary div.desc-date {
+ padding: 0 !important;
+}
+
+div.blog-titles h6 {
+  font-family: gotham-book;
+  font-size: 1.3em;
+}
+
+/* End of Media Page */
+
+/* Contact Page */
+
+div.nav-contact ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+div.nav-contact ul li {
+  float: left;
+  margin-left: 55px;
+}
+
+div.nav-contact ul li a {
+  font-size: 1.3em;
+  font-family: gotham-book;
+  color: #000;
+}
+
+div.banner {
+ text-align: center;
+}
+
+div.banner h6 {
+  font-family: gotham-light;
+}
+
+div.wrapper-nav-form {
+  padding: 10px;
+}
+
+div.wrapper-nav-form input[type=text] {
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding-left: 20px;
+  font-family: gotham-light-italic;
+  font-size: 1em;
+  height: 45px;
+}
+
+div.wrapper-submit {
+  text-align: center;
+   margin-top: 40%;
+}
+
+div.wrapper-submit input[type=submit] {
+  background: #000;
+  border-radius: 10px;
+  border: 1px solid #000;
+  color: #fff;
+  font-family: gotham-thin;
+  font-size: 1em;
+  height: 45px;
+  padding: 0 20px;
+}
+
+/* Reservation Section */
+
+div.wrapper-reservation {
+  padding: 0 10px;
+}
+
+div.wrapper-reservation div.banner {
+  text-align: center;
+} 
+
+div.wrapper-days1 {
+  margin: 0 !important;
+}
+
+
+div.wrapper-first, div.wrapper-second {
+  padding: 0 !important;
+}
+
+div.wrapper-days1 select {
+  margin: 0 !important;
+  font-size: 1em;
+  font-family: gotham-light-italic;
+}
+
+div.wrapper-days1 option {
+  font-size: 1em;
+  font-family: gotham-light-italic;
+}
+
+div#wrapper-month select {
+  border-top-left-radius: 10px !important;
+  border: 1px solid #000;
+  border-bottom: 0px !important;
+}
+
+div#wrapper-day select {
+  border-top-right-radius: 10px !important;
+  border-left: 0 !important;
+  border: 1px solid #000;
+  border-bottom: 0px !important;
+}
+
+div#wrapper-hour select {
+  border-bottom-left-radius: 10px !important;
+  border: 1px solid #000;
+}
+
+div#wrapper-min select {
+  border-radius: 0 !important;
+  border: 1px solid #000;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+div#wrapper-ampm select {
+  border-bottom-right-radius: 10px !important;
+  border: 1px solid #000;
+}
+
+
+/* End with Dropdown */
+
+div.wrapper-special {
+  margin-top: 20px !important;
+  margin-bottom: 50px;
+}
+
+div.wrapper-reserve {
+  text-align: center;
+}
+
+div.wrapper-reserve input {
+  background: #000;
+  color: #fff;
+  padding: 7px 108px;
+  border: 0 solid #fff;
+  border-radius: 10px;
+}
+
+/* End of Contact Page */
+h6.title  {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: gotham-book;
+  color: #000;
+  margin-left: 15px;
+  margin-bottom: -8px;
+}
+h6.sub-title {
+  font-size: 13px;
+  font-family: gotham-light;
+  color: #000;
+  margin-left: 15px;
+}
+#wrapper-say1 {
+  text-align: center;
+  position: relative;
+  padding: 50px 20px 0px;
+}
+#home-say1 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: gotham-medium;
+  color: #FFF;
+}
+#wrapper-say2 {
+  background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.57);
+  /*opacity: 0.8;*/
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+  padding: 10px;
+}
+
+div.content-entree-summary {
+  text-align: center;
+  width: 100%;
+}
+
+h6.entree-selected {
+  font-family: gotham-book;
+  font-size: 15px;
+  color: rgba(243, 100, 9, 1);
+  padding-top:10px;
+  padding-bottom: 4px;
+}
+
+div#entree1-summary {
+  text-align: left;
+}
+
+div#entree1-summary p {
+  margin: 10px 25px 0;
+  font-family: gotham-light;
+  line-height: 1.3em;
+  font-size: 13px;
+}
+#entree1-price {
+  margin-right: 10px;
+  margin-left: 10px;
+  border-top: 1px solid #ccc;
+}
+
+div.wrapper-product {
+  background: none repeat scroll 0 0 #fff;
+  height: 15%;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+div.wrapper-product ul {
+  list-style: none;
+  margin: 0 0 0 18px !important
+}
+
+div.wrapper-product ul li {
+  float: left;
+  padding: 0 15px;
+}
+
+div.wrapper-product ul li a {
+  color: #000;
+  font-family: gotham-light;
+  font-size: 1.2em;
+}
+
+/* Description : Nutrition, Diet, Ingredients of Each Products; */
+
+div.product-entree-nut {
+  padding-bottom: 120px;
+  width: 100%;
+  height: 100%;
+  /*border-bottom: 1px solid #000;*/
+}
+
+div.entree-nut {
+  height: 100%;
+  text-align: left;
+}
+
+div#entree1-nut1 {
+  float: left;
+}
+
+div#entree1-nut2 {
+  float: right;
+}
+
+div.entree-nut ul.nut-details {
+  font-family: gotham-light;
+  font-size: 13px;
+  list-style: none outside none;
+  margin: 0 !important;
+  padding: 0 0px;
+  width: 100%;
+}
+
+div.entree-nut ul.nut-details div.wrapper-details {
+  border-bottom: 1px solid #C9C9C9;
+  width: 135px;
+}
+
+div.entree-nut ul.nut-details div#details-name {
+  float: left;
+}
+
+div.entree-nut ul.nut-details div#details-num {
+  text-align: right;
+}
+
+div.entree-nut ul.nut-details li#details-num {
+  padding-left: 10px;
+}
+
+
+/* Diet Wrapper Content*/
+
+div.product-entree-diet {
+ margin: 0px; 
+}
+
+div.product-entree-diet ul {
+  list-style: none outside none;
+  margin: 0 !important;
+}
+
+div.product-entree-diet ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+
+div.wrapper-price {
+  margin-top: 3%;
+  padding-left: 5%;
+}
+
+h5#entree-price1 {
+  font-family: gotham-book;
+  font-size: 1.5em;
+ /* padding-left: 60px;*/
+
+}
+
+/* Ingredients Wrapper Content */
+
+div.product-entree-ing {
+  overflow-x: scroll;
+}
+
+div.product-entree-ing ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+div.product-entree-ing ul li {
+  float: left;
+}
+.entree1-image {
+  margin-bottom: 20px;
+}
+
+/* Feb 18 Owners Page by Ayee */
+
+
