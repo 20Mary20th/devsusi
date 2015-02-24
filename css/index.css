@@ -1,33 +1,3 @@
-/* Feb 24 Splash */
-
-div.wrapper-splash {
-  background-color: #fff;
-  height: 100%;
-}
-
-div.wrapper-logo-splash {
-  position: relative;
-}
-
-div.wrapper-logo-splash img {
-  padding: 0 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -opera-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-img#logo-gems {
-  display: none;
-}
-
-img#logo-susi {
-  /*display: none;*/
-}
-
 h1.banner-susi {
   position: relative;
   font-size: 2em;
@@ -253,7 +223,6 @@ input.previous {
 input.next {
     background: none repeat scroll 0px 0px #F36409 !important;
     border: 0px solid #000 !important;
-    margin-bottom: 10px;
     margin-top: 10% !important;
     padding: 2% 15% !important;
     border-radius: 10px !important;
@@ -624,9 +593,9 @@ div.cont-slides1 {
 }
 
 div.img-slides1 img {
-  background-size: cover;
-  /*height: 275px !important;
-  width: 355px !important;*/
+  /*padding: 0 37px;*/
+  height: 275px !important;
+  width: 355px !important;
 }
 
 div.ingredients-text {
@@ -635,6 +604,7 @@ div.ingredients-text {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: -25px;
 }
 
 
@@ -945,7 +915,7 @@ div.entree-nut ul.nut-details {
 
 div.entree-nut ul.nut-details div.wrapper-details {
   border-bottom: 1px solid #C9C9C9;
-  width: 135px;
+  /*width: 135px;*/
 }
 
 div.entree-nut ul.nut-details div#details-name {
@@ -981,6 +951,7 @@ div.product-entree-diet ul li {
 div.wrapper-price {
   margin-top: 3%;
   padding-left: 5%;
+  margin-bottom: 4%;
 }
 
 h5#entree-price1 {

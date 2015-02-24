@@ -1078,6 +1078,7 @@ div.wrapper-days1 {
   margin: 0 !important;
 }
 /* Contact Style */
+
 div.wrapper-contact {
   /*margin-top: 100px;*/
 }
@@ -1148,15 +1149,14 @@ div.wrapper-nav-form input[type=text] {
   /*height: 75px;*/
 }
 div.wrapper-nav-form textarea {
-  border-radius: 10px;
-border: 1px solid #000;
-padding-left: 20px;
-font-family: gotham-light;
-font-size: 15px;
-height: auto;
-float: left;
-position: relative;
-}
+  border-radius: 10px; 
+  border: 1px solid #000;
+  padding-left: 20px;
+  font-family: gotham-light;
+  font-size: 15px;
+  height: auto;
+  float: left;
+  }
 
 div.wrapper-submit {
    text-align: center;
