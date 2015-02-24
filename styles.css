@@ -299,7 +299,7 @@ div.wrapper-banner p {
 }
 div.nav-menu {
   overflow: auto;
-  width: 420%;
+  /*width: 420%;*/
 }
 div.tab-menu {
   overflow: auto;
@@ -539,9 +539,7 @@ div.entree-add img {
   border-radius: 10px;
 }
 div.entree {
-  height: 20%;
-  border-bottom: 1px solid rgb(159, 159, 159);
-  margin: 20px;
+  margin: -56px 20px 20px;
 }
 
 div.entree-image {
@@ -1019,10 +1017,13 @@ div.e-type1 {
   position: relative;
 }
 div.entree-price {
-  position: relative;
-  top: -46px;
-  right: -16px;
+    position: relative;
+    top: -46px;
+    right: -16px;
 }
+div.price-num {
+  left: 25px;
+} 
 h5.menu-price {
   font-family: gotham-book;
   font-size: 15px;
@@ -1065,7 +1066,7 @@ span.split {
   margin-right: 10px;
 }
 div.wrapper-reservation {
-  padding: 0 20px;
+  padding: 5px 20px;
   /*margin-top: 45px;*/
 }
 
@@ -1179,7 +1180,7 @@ div.wrapper-first, div.wrapper-second {
 div.wrapper-days1 select {
   margin: 0 !important;
   font-size: 1em;
-  font-family: gotham-light-italic;
+  font-family: gotham-light;
   /*height: 66px;*/
   font-size: 15px;
 }
@@ -1375,10 +1376,15 @@ h6.entree-selected {
     text-transform: uppercase;
 }
 div.entree:first-child {
-    margin-top: 0px;
+    margin-top: 10px;
 }
 div.entree-nut ul.nut-details div.wrapper-details:last-child {
     border-bottom: none;
+}
+div.entree-title {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    position: relative;
+    padding-bottom: 6px;
 }
 .success-inquire, .success-reserve {
    z-index: 99;

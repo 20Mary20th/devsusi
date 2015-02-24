@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/foundation.css"/>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-desktop.css" />
+
+    </noscript>
 <script type="text/javascript" src="jquery.js"></script>
 <style type="text/css">
   /*div.wrapper-nav {
@@ -19,7 +25,8 @@
   }
 </style>
 </head>
-<body>
+<body onload="init();">
+
 <!-- Header -->
       <header id="header">
         <div class="logo container">
@@ -71,7 +78,7 @@
           <input type="text" placeholder="contact number"/>
         </div>
         <div class="wrapper-fullname">
-          <textarea placeholder="message"/></textarea>
+           <textarea rows="1" style="height:1em;" id="text" placeholder="message"></textarea>
         </div>
 
 
@@ -252,7 +259,7 @@
         </div>
 
         <div class="wrapper-special">
-          <textarea placeholder="special notes"/></textarea>
+          <textarea rows="1" style="height:1em;" id="text" placeholder="special notes"></textarea>
         </div>
       </div>
        <div class="inquire-submit">
@@ -281,7 +288,6 @@
     </div>
    </body>
 <script src = "js/jquery-1.11.1.js"></script>
-  <script src = "js/menu.js"></script>
    <script src = "js/sidr/jquery.sidr.min.js"></script>
    <script src="https://maps.googleapis.com/maps/api/js"></script>
    <script src = "js/maps.js"></script>
@@ -354,5 +360,38 @@ $(function() {
     });
 
 
+</script>
+<script type="text/javascript">
+var observe;
+if (window.attachEvent) {
+    observe = function (element, event, handler) {
+        element.attachEvent('on'+event, handler);
+    };
+}
+else {
+    observe = function (element, event, handler) {
+        element.addEventListener(event, handler, false);
+    };
+}
+function init () {
+    var text = document.getElementById('text');
+    function resize () {
+        text.style.height = 'auto';
+        text.style.height = text.scrollHeight+'px';
+    }
+    /* 0-timeout to get the already changed text */
+    function delayedResize () {
+        window.setTimeout(resize, 0);
+    }
+    observe(text, 'change',  resize);
+    observe(text, 'cut',     delayedResize);
+    observe(text, 'paste',   delayedResize);
+    observe(text, 'drop',    delayedResize);
+    observe(text, 'keydown', delayedResize);
+
+    text.focus();
+    text.select();
+    resize();
+}
 </script>
 </html>
