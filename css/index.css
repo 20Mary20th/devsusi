@@ -1,3 +1,27 @@
+/*Feb 21 Splash*/
+
+div.wrapper-logo-splash {
+
+}
+
+div.wrapper-logo-splash img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);;
+  -webkit-transform: translate(-50%, -50%);;
+  -opera-transform: translate(-50%, -50%);;
+}
+
+img#logo-susi {
+  
+}
+
+img#logo-gems {
+  display: none;
+}
+
 h1.banner-susi {
   position: relative;
   font-size: 2em;
