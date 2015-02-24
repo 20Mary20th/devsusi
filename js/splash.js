@@ -6,10 +6,10 @@
   var logo2 = $('img#logo-susi');
   var logos = $('img').length;
   var ctr = -1;
-  var show = 500;
+  var show = 1500;
   var hide = 1500;
   var showdelay = 2000;
-  var interval = 4500;
+  var interval = 5500;
       wrapper.css({
        'width' : win,
       });
