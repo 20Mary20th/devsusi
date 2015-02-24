@@ -15,11 +15,11 @@ div.wrapper-logo-splash img {
 }
 
 img#logo-susi {
-  
+  display: none;
 }
 
 img#logo-gems {
-  display: none;
+  /*display: none;*/
 }
 
 h1.banner-susi {
