@@ -1,3 +1,30 @@
+/* Feb 24 Splash */
+
+div.wrapper-splash {
+  background-color: #000;
+  height: 100%;
+}
+
+div.wrapper-logo-splash {
+  position: relative;
+}
+
+div.wrapper-logo-splash img {
+  padding: 0 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img#logo-gems {
+  display: none;
+}
+
+img#logo-susi {
+  display: none;
+}
+
 h1.banner-susi {
   position: relative;
   font-size: 2em;
