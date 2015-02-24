@@ -525,6 +525,7 @@
 
 		#navPanel .link
 		{
+			font-family: gotham-light;
 			display: block;
 			color: inherit;
 			text-decoration: none;
