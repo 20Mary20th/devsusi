@@ -1,24 +1,34 @@
 (function($){
 
+  var win = $(window).width;
+  var wrapper = $('div.wrapper-logo-splash');
   var logo1 = $('img#logo-gems');
   var logo2 = $('img#logo-susi');
   var logos = $('img').length;
   var ctr = -1;
   var show = 500;
-  var hide = 500;
-  var showdelay = 3000;
-  var interval = 5000;
-      // logo1.css({'display': 'none'});
-
+  var hide = 1500;
+  var showdelay = 2000;
+  var interval = 4500;
+      wrapper.css({
+       'width' : win,
+      });
+  
   var timeout = setInterval(function() {
   	   ctr += 1;
   	   if (ctr != logos) {
-         $('img').eq(ctr).fadeIn(show).delay(showdelay);
-  	   } else {
-  	   	clearInterval(timeout);
+         $('img').eq(ctr).fadeIn(show).delay(showdelay).fadeOut(hide);
+     }
+  	   else {
+  	   	clearTimeout(timeout);
   	   	window.location = "login.html";
   	   }
-  	   $('img').fadeOut(hide);
+  	   // $('img').fadeOut(hide);
+  	   console.log('images: ' + ctr);
      }, interval);
+
+     // clearInterval(timeout);
+     // window.location = "login.html";
+
 
 })(jQuery)
