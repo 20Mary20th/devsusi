@@ -1144,6 +1144,7 @@ div.wrapper-nav-form input[type=text] {
   padding-left: 20px;
   font-family: gotham-light;
   font-size: 15px;
+  margin-bottom: 12px !important;
   /*height: 75px;*/
 }
 div.wrapper-nav-form textarea {
@@ -1154,7 +1155,6 @@ font-family: gotham-light;
 font-size: 15px;
 height: auto;
 float: left;
-top: 25px;
 position: relative;
 }
 
