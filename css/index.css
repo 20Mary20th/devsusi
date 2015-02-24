@@ -22,6 +22,9 @@ img#logo-gems {
   /*display: none;*/
 }
 
+
+@import url("font-awesome.min.css");
+
 h1.banner-susi {
   position: relative;
   font-size: 2em;
@@ -406,6 +409,7 @@ div.entree-price-submit {
   border-top: 2px solid #ccc;
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 40px;
 
 }
 
@@ -983,6 +987,42 @@ h5#entree-price1 {
   font-size: 1.5em;
  /* padding-left: 60px;*/
 
+}
+div.bottom-black {
+    background: none repeat scroll 0% 0% rgb(0, 0, 0);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0px;
+}
+div.bottom-black ul {
+  list-style: none;
+  margin: 0 auto
+}
+div.bottom-black ul li {
+  float:left;
+  width: 33.33%;
+  padding: 10px;
+  font-family: gotham-light;
+  font-size: 15px
+}
+div.bottom-black ul li.recommend:before {
+  content: "";
+  font-size: 12px;
+  font-family: "fontAwesome";
+  padding-right: 5px;
+}
+div.bottom-black ul li.share:before {
+  content: "";
+  font-size: 12px;
+  font-family: "fontAwesome";
+  padding-right: 5px;
+}
+div.bottom-black ul li.fav:before {
+  content: "";
+  font-size: 12px;
+  font-family: "fontAwesome";
+  padding-right: 5px;
 }
 
 /* Ingredients Wrapper Content */
