@@ -139,6 +139,9 @@ ul.selection li div.tab-container {
     border-right: 1px solid #CCC;
     padding-right: 18px;
 }
+/*ul.selection li div.tab-container:last-child{
+	border-right: 0px solid #CCC;
+}*/
 ul.selection li.active div.tab-container{
 	border-right: 0px;
 }
