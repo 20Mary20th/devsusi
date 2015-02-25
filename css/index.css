@@ -604,8 +604,9 @@ div.cont-slides1 {
 
 div.img-slides1 img {
   /*padding: 0 37px;*/
-  height: 275px !important;
-  width: 355px !important;
+  /*height: 275px !important;
+  width: 355px !important; */
+  background-size: cover;
 }
 
 div.ingredients-text {
@@ -614,7 +615,7 @@ div.ingredients-text {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: -25px;
+  /*margin-top: -25px;*/
 }
 
 
