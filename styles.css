@@ -8,6 +8,8 @@ body {
   height: 100%;
 }
 
+@import url("font-awesome.min.css");
+
 @font-face {
   font-family: 'gotham-light';
   src: url('fonts/gotham-light.otf') format('opentype');
@@ -320,7 +322,9 @@ div.wrapper-nav ul.selection {
   /*height: 15%;*/
   /*width: 440px !important;*/
 }
-
+div.wrapper-nav ul.selection a {
+  color: #000;
+}
 div.wrapper-nav ul.selection li {
     float: left;
     padding: 10px 20px 5px;
@@ -1004,11 +1008,14 @@ div.order-submit button {
 .popup {
     display: none;
 }
-
+.entree-title a {
+  text-decoration: none !important;
+}
 h6.e-title {
   font-size: 15px;
   font-family: gotham-book;
   margin-top: 10px;
+  text-decoration: none !important; 
 }
 div.e-type1 {
   font-family: gotham-light;
@@ -1078,7 +1085,6 @@ div.wrapper-days1 {
   margin: 0 !important;
 }
 /* Contact Style */
-
 div.wrapper-contact {
   /*margin-top: 100px;*/
 }
@@ -1145,19 +1151,19 @@ div.wrapper-nav-form input[type=text] {
   padding-left: 20px;
   font-family: gotham-light;
   font-size: 15px;
-  /*margin-bottom: 12px !important;*/
   /*height: 75px;*/
 }
 div.wrapper-nav-form textarea {
-  border-radius: 10px; 
-  border: 1px solid #000;
-  padding-left: 20px;
-  font-family: gotham-light;
-  font-size: 15px;
-  height: auto;
-  float: left;
-  margin-top: 20px;
-  }
+  border-radius: 10px;
+border: 1px solid #000;
+padding-left: 20px;
+font-family: gotham-light;
+font-size: 15px;
+height: auto;
+float: left;
+top: 25px;
+position: relative;
+}
 
 div.wrapper-submit {
    text-align: center;
@@ -1452,4 +1458,17 @@ position: relative;
 }
 #skel-layers-hiddenWrapper{
   height: 0% !important;
+}
+.count {
+    font-size: 13px;
+    color: #000;
+    padding: 0px 6px;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    background: none repeat scroll 0% 0% #EC5318;
+    border-radius: 10px;
+    position: absolute;
+    top: -2px;
+    right: -6px;
 }

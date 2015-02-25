@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
 <title>Boutique</title>
  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="css/tabs.css">
@@ -12,55 +13,39 @@
 </head>
 <body class="homepage">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="logo container">
-					<div>
-						<h1><a href="home.html" id="logo"><img class="logo" src="images/icons/susilogo2.png" alt=""></a></h1>
-					</div>
-					<div class= "cart"><a href="cart.html"><img src="images/icons/cart1.png" alt=""></a></div>
-				</div>
-
-			</header>
-
-		<!-- Nav -->
-			 <nav id="nav" class="skel-layers-fixed">
-        <ul>
-          <li class="current"><a href="home.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="botique.html">Boutique</a></li>
-          <li><a href="my-susi.html">Feed Me</a></li>
-          <li><a href="media.html">Media</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+		<div class = "wrapper-header fixed">
+     <div class="arrow-back"><a href="menu.html"><img src="images/icons/arrow-back.png" alt=""></a></div>
+      <div class= "title"><h5>Entree</h5></div>
+      <div class= "cart"><a href="#"><img src="images/icons/cart1.png" alt=""><span class="count">12</span></a></div>
+  </div>
   <div class="wrapper-bgs">
 <div class="wrapper-content no-nav">
 <h6 class="entree-selected">Something Salty</h6>
-    <div id="tab1" class="content">
+   <div id="tab1" class="content">
       <div class="entree">
+              <a href="page-entree.html">
                <div class="entree1-image">
                  <img src="images/salad.jpg" alt=""/>
                </div>
-
-            <div class="entree-desc row" id = "entree1-desc">
+               </a> 
+            <div class="entree-desc" id="entree1-desc">
                   <div class="entree-summary">
                     <div class="entree-title small-12 left">
-                      <h6 class = "e-title">Vegetable Salad</h6>
-                      
-                        <div class = "e-type1 small-8 left"><span class="detail">Low Calorie </span>
+                      <a href="page-entree.html">
+                      <h6 class="e-title">Vegetable Salad</h6>
+                      </a>
+                        <div class="e-type1 small-8 left"><span class="detail">Low Calorie </span>
                          <span class="split">|</span>
                         <span>Organic</span></div>
                         
                         
                        </div>   
-                        <div class="entree-price small-6 right">
+                        <div class="entree-price small-7 right">
                           <div class="price-num small-4 columns">
-                             <h5 class = "menu-price" id = "entree1-price">P80</h5>
+                             <h5 class="menu-price" id="entree1-price">P80</h5>
                           </div>
-                           <div class="entree-add small-7 columns">
-                          <a href="page-entree.html"><img src="images/icons/add.png" alt=""></a>
+                           <div class="entree-add small-7 column">
+                          <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
                          </div>
                       
                       </div>
@@ -69,27 +54,29 @@
 
                   
             </div>
+            <div class="clear-both"></div>
         </div>
             <div class="entree">
                <div class="entree1-image">
                  <img src="images/bg1.jpg" alt=""/>
                </div>
 
-            <div class="entree-desc row" id = "entree1-desc">
+             <div class="entree-desc" id="entree1-desc">
                   <div class="entree-summary">
                     <div class="entree-title small-12 left">
-                      <h6 class = "e-title">Vegetable Salad</h6>
+                      <h6 class="e-title">Vegetable Salad</h6>
                       
-                        <div class = "e-type1 small-8 left"><span class="detail">Low Calorie </span>
-                        <span class="split">|</span><span>Organic</span></div>
+                        <div class="e-type1 small-8 left"><span class="detail">Low Calorie </span>
+                         <span class="split">|</span>
+                        <span>Organic</span></div>
                         
                         
                        </div>   
-                        <div class="entree-price small-6 right">
+                        <div class="entree-price small-7 right">
                           <div class="price-num small-4 columns">
-                             <h5 class = "menu-price" id = "entree1-price">P80</h5>
+                             <h5 class="menu-price" id="entree1-price">P80</h5>
                           </div>
-                           <div class="entree-add small-7 columns">
+                           <div class="entree-add small-7 column">
                           <a href="page-entree.html"><img src="images/icons/add.png" alt=""></a>
                          </div>
                       
@@ -99,143 +86,10 @@
 
                   
             </div>
+            <div class="clear-both"></div>
         </div>
        </div>
-       <div id="tab2" class="content">
-            <p class="column small-12 con">
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet purus urna. Proin dictum fringilla enim, sit amet suscipit dolor dictum in.
-          </p>
-          <div class="about-content">
-                  <div class="left column small-6"><img class="right" src="images/bg3.jpg"></div>
-                  <div class="right column small-6"><img class="right" src="images/bg3.jpg"></div>
-        </div>
-       </div>
-       <div id="tab3" class="content">
-         <ul>
-         <a href="#">  <li>Organic 
-          </li> </a>
-         <a href="#"> <li>Dairy Free
-          </li></a>
-         <a href="#"> <li>Gluten Free
-          </li></a>
-          <a href="#"><li>Sugar Free
-          </li></a>
-          <a href="#"><li>Nut Free
-          </li></a>
-          <a href="#"><li>Lactose Free
-          </li></a>
-          <a href="#"><li>Glucose Free
-          </li></a>
-         </ul>
-       </div>
-       <div id="tab4" class="content">
-         <ul>
-         <a href="#">  <li>Organic 
-          </li> </a>
-         <a href="#"> <li>Dairy Free
-          </li></a>
-         <a href="#"> <li>Gluten Free
-          </li></a>
-          <a href="#"><li>Sugar Free
-          </li></a>
-          <a href="#"><li>Nut Free
-          </li></a>
-          <a href="#"><li>Lactose Free
-          </li></a>
-          <a href="#"><li>Glucose Free
-          </li></a>
-         </ul>
-       </div>
-       <div id="tab5" class="content">
-         <ul>
-         <a href="#">  <li>Organic 
-          </li> </a>
-         <a href="#"> <li>Dairy Free
-          </li></a>
-         <a href="#"> <li>Gluten Free
-          </li></a>
-          <a href="#"><li>Sugar Free
-          </li></a>
-          <a href="#"><li>Nut Free
-          </li></a>
-          <a href="#"><li>Lactose Free
-          </li></a>
-          <a href="#"><li>Glucose Free
-          </li></a>
-         </ul>
-       </div>
-       <div id="tab6" class="content">
-         <ul>
-         <a href="#">  <li>Organic 
-          </li> </a>
-         <a href="#"> <li>Dairy Free
-          </li></a>
-         <a href="#"> <li>Gluten Free
-          </li></a>
-          <a href="#"><li>Sugar Free
-          </li></a>
-          <a href="#"><li>Nut Free
-          </li></a>
-          <a href="#"><li>Lactose Free
-          </li></a>
-          <a href="#"><li>Glucose Free
-          </li></a>
-         </ul>
-       </div>
-       <div id="tab7" class="content">
-         <ul>
-         <a href="#">  <li>Organic 
-          </li> </a>
-         <a href="#"> <li>Dairy Free
-          </li></a>
-         <a href="#"> <li>Gluten Free
-          </li></a>
-          <a href="#"><li>Sugar Free
-          </li></a>
-          <a href="#"><li>Nut Free
-          </li></a>
-          <a href="#"><li>Lactose Free
-          </li></a>
-          <a href="#"><li>Glucose Free
-          </li></a>
-         </ul>
-       </div>
-       <div id="tab8" class="content">
-         <ul>
-         <a href="#">  <li>Organic 
-          </li> </a>
-         <a href="#"> <li>Dairy Free
-          </li></a>
-         <a href="#"> <li>Gluten Free
-          </li></a>
-          <a href="#"><li>Sugar Free
-          </li></a>
-          <a href="#"><li>Nut Free
-          </li></a>
-          <a href="#"><li>Lactose Free
-          </li></a>
-          <a href="#"><li>Glucose Free
-          </li></a>
-         </ul>
-       </div>
-       <div id="tab9" class="content">
-         <ul>
-         <a href="#">  <li>Organic 
-          </li> </a>
-         <a href="#"> <li>Dairy Free
-          </li></a>
-         <a href="#"> <li>Gluten Free
-          </li></a>
-          <a href="#"><li>Sugar Free
-          </li></a>
-          <a href="#"><li>Nut Free
-          </li></a>
-          <a href="#"><li>Lactose Free
-          </li></a>
-          <a href="#"><li>Glucose Free
-          </li></a>
-         </ul>
-       </div>
+      
     </div>
   </div>
 </body>
