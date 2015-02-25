@@ -1,5 +1,3 @@
-@import url("font-awesome.min.css");
-
 /* Feb 21 Splash Page */
 
 div.wrapper-logo-splash {
@@ -614,8 +612,6 @@ div.product-entree-ing ul li {
   float: left;
 }
 
-
-
 /* Feb 19 and Feb 20*/
 
 div.cont-slides1 {
@@ -623,9 +619,6 @@ div.cont-slides1 {
 }
 
 div.img-slides1 img {
-  /*padding: 0 37px;*/
-  /*height: 275px !important;
-  width: 355px !important;*/
   background-size: cover;
 }
 
@@ -635,7 +628,6 @@ div.ingredients-text {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-/*  margin-top: -25px;*/
 }
 
 
@@ -802,11 +794,6 @@ div#wrapper-min select {
 div#wrapper-ampm select {
   border-bottom-right-radius: 10px !important;
   border: 1px solid #000;
-  font-family: gotham-light;
-}
-
-div#wrapper-ampm select option h6 {
-  font-size: 13px;
 }
 
 
@@ -1052,5 +1039,8 @@ div.product-entree-ing ul li {
 }
 
 /* Feb 18 Owners Page by Ayee */
+
+
+
 
 

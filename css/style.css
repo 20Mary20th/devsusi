@@ -52,7 +52,7 @@
 
 	body,input,textarea,select
 	{
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'gotham-light' !important;
 		font-weight: 400;
 		color: #000;
 		font-size: 11.5pt;
@@ -62,7 +62,6 @@
 	h1, h2, h3, h4, h5, h6
 	{
 		font-family: 'gotham-book';
-		font-weight: 700;
 		text-transform: uppercase;
 		color: #000;
 	}
