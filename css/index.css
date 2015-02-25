@@ -1,3 +1,52 @@
+/* Feb 25 Forgot Form */
+
+div.wrapper-forgot {
+
+}
+
+div.forgot-subtitle {
+  text-align: center;
+}
+
+div.forgot-subtitle h6 {
+  font-family: gotham-book;
+  line-height: 10px;
+}
+
+div.banner-forgot {
+   margin-top: 20px;
+   text-align: center;
+}
+
+div.banner-forgot h6 {
+  font-family: gotham-light;
+  line-height: 18px;
+}
+
+div#forgot-logo {
+  height: 400px;
+}
+
+div.forgot-email {
+  padding: 30px 16px;
+}
+
+div.forgot-email input {
+  
+}
+
+div#forgot-submit {
+  text-align: center;
+}
+
+div#forgot-submit input {
+  font-size: 15px !important;
+  font-family: gotham-light;
+  padding: 10 !important;
+  border-radius: none !important;
+  border: 0 solid #000;
+}
+
 /* Feb 21 Splash Page */
 
 div.wrapper-logo-splash {
