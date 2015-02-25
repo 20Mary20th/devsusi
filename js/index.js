@@ -15,17 +15,17 @@ $(document).ready(function() {
   });
 });
 $(document).ready(
-	function() {
-			$(".menu-toggle-btn").click(function() {
-			$(this).toggleClass("open");
-			$(".mobile-nav").fadeIn(1000);
-			if ($(this).hasClass('open')){
-					$(".mobile-nav").fadeIn(1000);
-			}
-			else {
-				$(".mobile-nav").fadeOut(1000);
-			}
-		});
+  function() {
+      $(".menu-toggle-btn").click(function() {
+      $(this).toggleClass("open");
+      $(".mobile-nav").fadeIn(1000);
+      if ($(this).hasClass('open')){
+          $(".mobile-nav").fadeIn(1000);
+      }
+      else {
+        $(".mobile-nav").fadeOut(1000);
+      }
+    });
 
-			
+      
   });
