@@ -1,75 +1,5 @@
-/* Feb 25 Forgot Form */
 
-div.wrapper-forgot {
-
-}
-
-div.forgot-subtitle {
-  text-align: center;
-}
-
-div.forgot-subtitle h6 {
-  font-family: gotham-book;
-  line-height: 10px;
-}
-
-div.banner-forgot {
-   margin-top: 20px;
-   text-align: center;
-}
-
-div.banner-forgot h6 {
-  font-family: gotham-light;
-  line-height: 18px;
-}
-
-div#forgot-logo {
-  height: 400px;
-}
-
-div.forgot-email {
-  padding: 30px 16px;
-}
-
-div.forgot-email input {
-  
-}
-
-div#forgot-submit {
-  text-align: center;
-}
-
-div#forgot-submit input {
-  font-size: 15px !important;
-  font-family: gotham-light;
-  padding: 10 !important;
-  border-radius: none !important;
-  border: 0 solid #000;
-}
-
-/* Feb 21 Splash Page */
-
-div.wrapper-logo-splash {
-
-}
-
-div.wrapper-logo-splash img {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);;
-  -webkit-transform: translate(-50%, -50%);;
-  -opera-transform: translate(-50%, -50%);;
-}
-
-img#logo-susi {
-  display: none;
-}
-
-img#logo-gems {
-  /*display: none;*/
-}
+@import url("font-awesome.min.css");
 
 h1.banner-susi {
   position: relative;
@@ -658,6 +588,8 @@ div.product-entree-ing ul li {
   float: left;
 }
 
+
+
 /* Feb 19 and Feb 20*/
 
 div.cont-slides1 {
@@ -665,7 +597,9 @@ div.cont-slides1 {
 }
 
 div.img-slides1 img {
-  background-size: cover;
+  /*padding: 0 37px;*/
+  height: 275px !important;
+  width: 355px !important;
 }
 
 div.ingredients-text {
@@ -674,6 +608,7 @@ div.ingredients-text {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: -25px;
 }
 
 
@@ -1085,8 +1020,5 @@ div.product-entree-ing ul li {
 }
 
 /* Feb 18 Owners Page by Ayee */
-
-
-
 
 
