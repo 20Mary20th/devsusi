@@ -69,14 +69,14 @@ div.container {
     background-position: center center;
 }
 div.wrapper-fb {
-    width: 100%;
-    padding: 8px;
+    /*width: 100%;*/
+    /*padding: 8px;*/
     top: 30px;
     position: relative;
 }
 img.confb {
-  width: 100%;
-  height: 100%;
+  /*width: 100%;
+  height: 100%;*/
   padding-bottom: 12px;
 }
 
