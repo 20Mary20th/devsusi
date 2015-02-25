@@ -1029,4 +1029,26 @@ div.product-entree-ing ul li {
 
 /* Feb 18 Owners Page by Ayee */
 
+/* */
 
+/* Feb 25 Splash Page */
+
+div.wrapper-logo-splash {
+
+}
+div.wrapper-logo-splash img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);;
+  -webkit-transform: translate(-50%, -50%);;
+  -opera-transform: translate(-50%, -50%);;
+}
+
+img#logo-susi {
+  display: none;
+}
+img#logo-gems {
+  /*display: none;*/
+}
