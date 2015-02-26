@@ -146,7 +146,7 @@
         <div id="fb-root">
          <a href="http://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button">   <img src="images/icons/fblogin1.png" alt="facebook" /></a>
         </div>
-           <div
+<div
   class="fb-like"
   data-share="true"
   data-width="450"
@@ -158,6 +158,23 @@
       </div>
 </div>
   </div>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '807063136013927',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <script src = "js/menu.js"></script>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
