@@ -1499,9 +1499,10 @@ position: relative;
 
 button.close-container-social {
   background: none repeat scroll 0% 0% transparent;
-  top: 0%;
+  top: 8%;
   position: fixed;
   right: 0px;
+  z-index: 1000;
 }
 div.container-image-social {
   background: none repeat scroll 0% 0% #FFF;
