@@ -985,3 +985,10 @@
 				border-width: 2px;
 				line-height: 1em;
 			}
+
+div.cart img {
+    margin: 0px;
+    top: 0%;
+    position: relative;
+    max-width: 30px;
+}
