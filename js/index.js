@@ -29,3 +29,12 @@ $(document).ready(
 
       
   });
+$(document).ready(
+    function() {
+        $("li.share").click(function() {
+            $(".container-social").fadeIn(1000);
+        });
+        $("button.close-container-social").click(function() {
+            $(".container-social").fadeOut(1000);
+        });
+    });
