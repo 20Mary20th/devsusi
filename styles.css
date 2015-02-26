@@ -536,6 +536,7 @@ li.location-desc p {
 
 div#content-entree {
   width: 100%;
+  overflow: hidden;
 }
 div.entree-add {
   width: 90px;
