@@ -1257,7 +1257,7 @@ div#wrapper-option select:after {
 .order-quantity {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 5px !important;
   border: 1px solid #000 !important;
   width: 35px !important;
   font-family: gotham-light !important;
