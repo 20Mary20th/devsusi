@@ -1,3 +1,10 @@
+/*<<<<<<< HEAD
+=======
+@import url("css/font-awesome.min.css");*/
+
+/*>>>>>>> ayee*/
+
+/* Feb 25 Forgot Form */
 
 @import url("font-awesome.min.css");
 
@@ -598,8 +605,9 @@ div.cont-slides1 {
 
 div.img-slides1 img {
   /*padding: 0 37px;*/
-  height: 275px !important;
-  width: 355px !important;
+  /*height: 275px !important;
+  width: 355px !important; */
+  background-size: cover;
 }
 
 div.ingredients-text {
@@ -608,7 +616,7 @@ div.ingredients-text {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: -25px;
+  /*margin-top: -25px;*/
 }
 
 
@@ -938,7 +946,7 @@ div.entree-nut ul.nut-details li#details-num {
 /* Diet Wrapper Content*/
 
 div.product-entree-diet {
- margin: 0px; 
+ margin: 0px;
 }
 
 div.product-entree-diet ul {
@@ -1021,4 +1029,26 @@ div.product-entree-ing ul li {
 
 /* Feb 18 Owners Page by Ayee */
 
+/* */
 
+/* Feb 25 Splash Page */
+
+div.wrapper-logo-splash {
+
+}
+div.wrapper-logo-splash img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);;
+  -webkit-transform: translate(-50%, -50%);;
+  -opera-transform: translate(-50%, -50%);;
+}
+
+img#logo-susi {
+  display: none;
+}
+img#logo-gems {
+  /*display: none;*/
+}

@@ -158,6 +158,9 @@ div.wrapper-submit input[type=submit] {
   padding: 0 145px;
 }
 
+textarea#text {
+  
+}
 /* Reservation Section */
 
 div.wrapper-reservation {
