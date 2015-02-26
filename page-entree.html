@@ -147,12 +147,44 @@
            <img src="images/icons/fblogin1.png"/>
          </div>
         </div>
+        <div id="fb-root">Facebook</div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=807063136013927&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     </div>
 
           <!--End of Content Entree Summary -->
       </div>
 </div>
   </div>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '807063136013927',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+  FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/',
+  }, function(response){});
+</script>
   <script src = "js/menu.js"></script>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
