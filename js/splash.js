@@ -22,6 +22,6 @@
   	   else {
   	   	clearTimeout(timeout);
   	   	window.location.replace("login.html");
-  	   }
+  	   } 
      }, interval); 
 })(jQuery)
