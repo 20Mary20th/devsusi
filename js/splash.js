@@ -21,14 +21,7 @@
      }
   	   else {
   	   	clearTimeout(timeout);
-  	   	window.location = "login.html";
+  	   	window.location.replace("login.html");
   	   }
-  	   // $('img').fadeOut(hide);
-  	   console.log('images: ' + ctr);
      }, interval);
-
-     // clearInterval(timeout);
-     // window.location = "login.html";
-
-
 })(jQuery)
