@@ -990,5 +990,5 @@ div.cart img {
     margin: 0px;
     top: 0%;
     position: relative;
-    max-width: 30px;
+    max-width: 36px !important;
 }

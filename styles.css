@@ -159,7 +159,7 @@ div.wrapper-header {
   background: #FFF;
   width: 100%;
   /*position: relative;*/
-  height: 45px;
+  height: 58px;
   box-shadow: 1px 3px 2px 0px #EDEDED;
 }
 
@@ -320,6 +320,7 @@ div.wrapper-nav {
 div.wrapper-nav ul.selection {
   list-style: none;
   margin-left: 0px !important;
+  margin-top: 20px;
   /*height: 15%;*/
   /*width: 440px !important;*/
 }

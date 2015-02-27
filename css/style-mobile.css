@@ -445,6 +445,7 @@
 		background-color: #fff;
 		/*background-image: url('images/overlay.png');*/
 		box-shadow: 1px 3px 2px 0px #EDEDED;
+		height: 58px !important;
 	}
 
 		#titleBar .title
@@ -459,6 +460,7 @@
 			color: #000;
 			z-index: 1000;
 			text-align: center;
+			margin-top: 5px;
 		}
 
 		#titleBar .toggle
@@ -469,6 +471,8 @@
 			width: 80px;
 			height: 60px;
 			z-index: 1001;
+			margin-left: 10px;
+            margin-top: 5px;
 		}
 
 			#titleBar .toggle:before
@@ -491,7 +495,7 @@
 				color: #E64D06;
 				text-align: center;
 				line-height: 44px;
-				font-size: 25px;
+				font-size: 34px;;
 			}
 
 			#titleBar .toggle:active:before
