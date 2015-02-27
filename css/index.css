@@ -608,6 +608,8 @@ div.img-slides1 img {
   /*height: 275px !important;
   width: 355px !important; */
   background-size: cover;
+  width: 320px !important;
+  /*height: 480px !important;*/
 }
 
 div.ingredients-text {
