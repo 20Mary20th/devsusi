@@ -1517,3 +1517,16 @@ div.container-image-social h5 {
   font-family: "gotham-medium";
   text-transform: uppercase;
 }
+
+/*Feb 27 - Setting the image cart on Cart Page the same*/
+
+div.cart img {
+    margin: 0px;
+    top: 0%;
+    position: relative;
+    max-width: 36px !important;
+}
+
+h5.slogan-cart {
+  font-size: 20px;
+}
