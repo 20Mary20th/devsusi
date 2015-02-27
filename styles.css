@@ -1530,3 +1530,9 @@ div.cart img {
 h5.slogan-cart {
   font-size: 20px;
 }
+
+/* Feb 27 --> Checkout Page: Setting the margin of personal information */
+
+div#link-personal-info {
+  margin-top: 15px;
+} 
