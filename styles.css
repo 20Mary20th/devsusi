@@ -44,7 +44,7 @@ h6#or {
     color: #FFF !important;
     font-weight: bold;
     text-align: center;
-    font-family: gotham-book;
+    font-family: 'gotham-book';
 }
 
 img.bg {
@@ -98,7 +98,7 @@ input.login {
     height: 16%;
     border: 0px solid #000;
     padding: 10px;
-    font-family: gotham-light;
+    font-family: 'gotham-light';
     width: 94%;
     font-size: 14px;
     margin: 2% 3% 1%;
@@ -113,7 +113,7 @@ button.submit {
     background: none repeat scroll 0% 0% #000;
     border: 0px solid #000;
     font-size: 15px !important;
-    font-family: gotham-book !important;
+    font-family: 'gotham-book' !important;
     color: #FFF;
     padding: 9px !important;
     text-transform: uppercase;
@@ -131,7 +131,7 @@ h6.forgot {
     text-align: center;
     margin-top: 5%;
     font-size: 13px;
-    font-family: gotham-book;
+    font-family: 'gotham-book';
 }
 h6.forgot a {
   color: #FFF;
@@ -159,7 +159,7 @@ div.wrapper-header {
   background: #FFF;
   width: 100%;
   /*position: relative;*/
-  height: 45px;
+  height: 58px;
   box-shadow: 1px 3px 2px 0px #EDEDED;
 }
 
@@ -238,7 +238,7 @@ div.title {
 }
 div.title h5 {
   text-transform: uppercase;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   text-align: center;
   font-weight: bold;
 }
@@ -287,7 +287,7 @@ div.banner-container {
 h1.banner-title {
   text-transform: uppercase;
   font-size: 13px;
-  font-family: gotham-medium;
+  font-family: 'gotham-medium';
   color: #fff;
 }
 div.wrapper-banner p {
@@ -297,7 +297,7 @@ div.wrapper-banner p {
   text-align: center;
   background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.29);
   font-size: 15px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-weight: bold;
 }
 div.nav-menu {
@@ -320,6 +320,7 @@ div.wrapper-nav {
 div.wrapper-nav ul.selection {
   list-style: none;
   margin-left: 0px !important;
+  margin-top: 20px;
   /*height: 15%;*/
   /*width: 440px !important;*/
 }
@@ -341,7 +342,7 @@ div.wrapper-nav ul.selection li:after {
 }
 div.wrapper-nav ul.selection li a {
   color: #000;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   padding: 12px;
 }
 
@@ -370,7 +371,7 @@ div.content, div.intro1, div.intro2, div.history {
 div.intro1 p, div.intro2 p {
   margin: 15px 15px 0 15px;
   letter-spacing: 0.1px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   text-align: center;
   line-height: 1.1em;
 }
@@ -389,7 +390,7 @@ div.intro1 {
 }
 
 div.intro2-desc {
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   letter-spacing: 0.1px;
   line-height: 1.1em;
   margin-bottom: 10px;
@@ -405,7 +406,7 @@ div.intro2-summary {
 
 div.intro2-summary p {
   letter-spacing: 0.1px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   text-align: left;
   line-height: 1.1em;
 }
@@ -415,13 +416,13 @@ div.intro2-summary p {
 /* Owner Page */
 
 h5.intro1-owner {
-  font-family: gotham-bold;
+  font-family: 'gotham-bold';
   color: rgba(243, 100, 9, 1);
   text-align: center;
 }
 
 p.owner-summary {
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   text-align: justify;
 }
 
@@ -515,12 +516,12 @@ ul.location li#location-desc1 {
 }
 
 li.location-desc h6 {
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   line-height: 10px;
 }
 
 li.location-desc p {
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   line-height: 10px;
 }
 
@@ -602,7 +603,7 @@ div.content ul li:after {
     float: right;
 }
 div.content ul a {
-    font-family: gotham-light;
+    font-family: 'gotham-light';
     font-size: 18px;
     color: #000;
     text-decoration: none;
@@ -618,10 +619,10 @@ div.arrow-back img {
   max-width: 30px;
 }
 div.wrapper-cart > div.product-container:first-child {
-  margin-top: 26px !important;
+  margin-top: 73px !important;
 }
 div.product-container , .product-title, .price {
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 13px;
 }
 div.product-container {
@@ -663,7 +664,7 @@ div.product-container img{
 input.quantity {
     border-radius: 10px !important;
     text-align: center;
-    font-family: gotham-light !important;
+    font-family: 'gotham-light' !important;
     font-size: 17px !important;
     width: 14% !important;
     position: relative;
@@ -682,7 +683,7 @@ input.quantity {
     padding: 6px;
     width: 26% !important;
     margin-left: 20px;
-    font-family: gotham-light;
+    font-family: 'gotham-light';
     line-height: 10px;
     margin-top: 11px;
     font-size: 13px;
@@ -708,7 +709,7 @@ input.quantity {
 }
 .product-total ul li {
   width: 98%;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-weight: bold;
   float: left;
 }
@@ -724,7 +725,7 @@ input.quantity {
 }
 .total-amount, .total-amount-price {
   text-transform: uppercase;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-weight: bold;
   font-size: 20px;
   margin: 0px auto;
@@ -743,7 +744,7 @@ input.quantity {
   padding: 15px;
   border: 1px solid #000;
   border-radius: 10px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-style: italic;
   font-size: 16px !important;
   background: transparent;
@@ -860,7 +861,7 @@ h1 a {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 17px;
   background: #000;
 }
@@ -887,7 +888,7 @@ h1 a {
 .accordion li.open .link {
     color: #fff;
     background: none repeat scroll 0% 0% rgb(0, 0, 0);
-    font-family: gotham-light;
+    font-family: 'gotham-light';
     font-size: 17px;
 }
 
@@ -915,7 +916,7 @@ h1 a {
   width: 90%;
   padding: 10px;
   margin: 12px 13px 7px 18px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 16px;
   color: rgb(0, 0, 0);
   text-transform: lowercase;
@@ -947,7 +948,7 @@ h1 a {
   margin-right: 20px;
 }
 div.amount-total, div.name-total {
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   font-size: 20px;
   color: rgb(233, 81, 10);
   text-transform: uppercase;
@@ -968,7 +969,7 @@ div.payment-methods ul li:last-child{
 div.payment-methods ul li {
   border-top: 1px solid rgb(0, 0, 0);
   padding: 15px;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   text-transform: uppercase;
   padding-left: 20px;
 }
@@ -986,7 +987,7 @@ div.inquire-submit button, div.reserve-submit button {
     padding: 10px;
     border: 1px solid #000;
     border-radius: 10px;
-    font-family: gotham-light;
+    font-family: 'gotham-light';
     font-size: 16px;
     background: #000;
     text-transform: uppercase;
@@ -996,7 +997,7 @@ div.order-submit button {
     padding: 10px;
     border: 1px solid #000;
     border-radius: 10px;
-    font-family: gotham-light;
+    font-family: 'gotham-light';
     font-size: 16px;
     background: #000;
     text-transform: uppercase;
@@ -1015,12 +1016,12 @@ div.order-submit button {
 }
 h6.e-title {
   font-size: 15px;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   margin-top: 10px;
   text-decoration: none !important; 
 }
 div.e-type1 {
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 13px;
   top: -10px;
   position: relative;
@@ -1034,7 +1035,7 @@ div.price-num {
   left: 25px;
 } 
 h5.menu-price {
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   font-size: 15px;
   margin-left: 12px;
   margin-top: 5px;
@@ -1054,7 +1055,7 @@ span.split {
 }
 .blog-content h5.blog-title {
   font-size: 15px;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 8px;
@@ -1066,12 +1067,12 @@ span.split {
 }
 .blog-header span.author {
   font-size: 13px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   margin-right: 10px;
 }
 .blog-header span.date {
   font-size: 13px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   margin-right: 10px;
 }
 div.wrapper-reservation {
@@ -1125,7 +1126,7 @@ div.nav-contact ul li {
 
 div.nav-contact ul li a {
   font-size: 1.3em;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   color: #000;
 }
 
@@ -1134,7 +1135,7 @@ div.banner {
 }
 
 div.banner h6 {
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 14px;
 }
 
@@ -1151,7 +1152,7 @@ div.wrapper-nav-form input[type=text] {
   border-radius: 10px;
   border: 1px solid #000;
   padding-left: 20px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 15px;
   /*height: 75px;*/
 }
@@ -1159,7 +1160,7 @@ div.wrapper-nav-form textarea {
   border-radius: 10px;
   border: 1px solid #000;
   padding-left: 20px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 15px;
   height: auto;
   float: left;
@@ -1181,7 +1182,7 @@ div.wrapper-submit input[type=submit] {
   border: 1px solid #000;
   border-radius: 10px;
   color: #fff;
-  font-family: gotham-thin;
+  font-family: 'gotham-thin';
   font-size: 1.5em;
   h/*eight: 67px;*/
   padding: 0 145px;
@@ -1193,14 +1194,14 @@ div.wrapper-first, div.wrapper-second {
 div.wrapper-days1 select {
   margin: 0 !important;
   font-size: 1em;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   /*height: 66px;*/
   font-size: 15px;
 }
 
 div.wrapper-days1 option {
   font-size: 1em;
-  font-family: gotham-light-italic;
+  font-family: 'gotham-light-italic';
 }
 
 div#wrapper-month select {
@@ -1238,7 +1239,7 @@ div#wrapper-ampm select {
 }
 div#wrapper-option select, div#wrapper-option textarea {
   border-radius: 10px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-style: italic;
   border: 1px solid #000;
 }
@@ -1260,13 +1261,13 @@ div#wrapper-option select:after {
   border-radius: 5px !important;
   border: 1px solid #000 !important;
   width: 35px !important;
-  font-family: gotham-light !important;
+  font-family: 'gotham-light' !important;
   font-size: 15px !important;
   text-align: center;
 
 }
 .order-price {
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 15px;
   right: 0px;
   top: 10px;
@@ -1281,7 +1282,7 @@ div#wrapper-option select:after {
 }
 .quantity {
     padding: 8px;
-    font-family: gotham-light;
+    font-family: 'gotham-light';
     font-size: 15px;
     text-align: left;
     margin-right: 20px;
@@ -1306,7 +1307,7 @@ div.wrapper-reserve input[type=submit] {
   border: 0 solid #fff;
   border-radius: 10px;
   color: #fff;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 15px;
   padding: 10px;
   /*margin:0 auto;*/
@@ -1327,7 +1328,7 @@ div.wrapper-reserve input[type=submit] {
 .product-ingredients h5 {
   /*position: absolute;*/
   bottom: 0px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-size: 13px;
   text-transform: uppercase;
   margin-top: -27px;
@@ -1336,7 +1337,7 @@ div.wrapper-reserve input[type=submit] {
 #entree-price1 {
   padding-right: 7px;
   margin-top: 4px;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   font-size: 18px;
 }
 #entree1-add img {
@@ -1373,7 +1374,7 @@ div.input-transaction textarea {
   padding: 15px;
   border: 1px solid #000;
   border-radius: 10px;
-  font-family: gotham-light;
+  font-family: 'gotham-light';
   font-style: italic;
   font-size: 16px !important;
   background: none repeat scroll 0% 0% transparent;
@@ -1382,7 +1383,7 @@ div.input-transaction textarea {
   float: left;
 }
 h6.entree-selected {
-    font-family: gotham-book;
+    font-family: 'gotham-book';
     font-size: 15px;
     color: #F36409;
     padding-top: 10px;
@@ -1421,7 +1422,7 @@ div.entree-title {
 }
 .success-inquire h5, .success-reserve h5 {
   color: rgb(246, 88, 2);
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   text-align: center;
   top: 40%;
   position: fixed;
@@ -1429,11 +1430,11 @@ div.entree-title {
   font-size: 21px;
   text-transform: uppercase;
   width: 100%;
-}
+} 
 .success-inquire p, .success-reserve p{
   position: fixed;
   top: 52%;
-  font-family: gotham-book;
+  font-family: 'gotham-book';
   text-align: center;
   font-size: 15px;
   color: rgb(0, 0, 0);
@@ -1516,3 +1517,22 @@ div.container-image-social h5 {
   font-family: "gotham-medium";
   text-transform: uppercase;
 }
+
+/*Feb 27 - Setting the image cart on Cart Page the same*/
+
+div.cart img {
+    margin: 0px;
+    top: 0%;
+    position: relative;
+    max-width: 36px !important;
+}
+
+h5.slogan-cart {
+  font-size: 20px;
+}
+
+/* Feb 27 --> Checkout Page: Setting the margin of personal information */
+
+div#link-personal-info {
+  margin-top: 15px;
+} 
