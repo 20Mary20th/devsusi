@@ -4,15 +4,15 @@
     
     menuBar: function() {
       $(".menu-toggle-btn").click(function() {
-      $(this).toggleClass("open");
-      $(".mobile-nav").fadeIn(1000);
-      if ($(this).hasClass('open')){
+        $(this).toggleClass("open");
+        $(".mobile-nav").fadeIn(1000);
+         if ($(this).hasClass('open')){
           $(".mobile-nav").fadeIn(1000);
-      }
-      else {
-        $(".mobile-nav").fadeOut(1000);
         }
-    });
+         else {
+          $(".mobile-nav").fadeOut(1000);
+        }
+      });
     },
 
     aboutNav : function() {
@@ -42,13 +42,49 @@
        mapTypeId: google.maps.MapTypeId.ROADMAP
      }
      var map = new google.maps.Map(mapCanvas, mapOptions);
-    }
+    },
+
+    cartCompute : function() {
+      var price = 0 ;
+      var del = $(".price-delivery").data('delivery');
+        $(".product-container").each(function(){
+          quantity = $(this).find(".quantity").attr('value');
+          price  +=  ($(this).find(".price").data('price') * quantity );
+
+          $(this).find(".quantity-price").text($(this).find(".price").data('price') * quantity);
+        });
+        $('.price-total span').text(price);
+        $('.total-amount-price span').text(price + del);
+      
+        if (price == 0) {
+          $('.price-delivery').text('P 0');
+          $('.total-amount-price span').text('P 0');
+
+          $('.mobile-nav').fadeIn(1000);
+          $("button.close").click(function() {
+            $(".mobile-nav").fadeOut(1000);
+        });
+        // var r = confirm("Cart Empty Would You like to go to Menu page?");
+        //     if (r == true) {
+        //         window.location.href= 'menu.html';
+        //     } else {
+        //         x = "You pressed Cancel!";
+        //     }
+
+      }
+      $(".remove").click(function(){
+        var produclength = $('.product-container').length;
+          if (produclength != 0) {
+            $(this).parent().remove();
+          }
+      });
+    },
     
   };
 
   setjs.menuBar();
   setjs.aboutNav();
-  
+  setjs.cartCompute();
   setjs.viewGMap();
-  google.maps.event.addDomListener(window, 'load', init);
+  google.maps.event.addDomListener(window, 'load', setjs.viewGMap);
 })(jQuery)
