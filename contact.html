@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" charset="UTF-8"/>
 <title>Media</title>
- <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="css/tabs.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/foundation.css"/>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/misc.css">
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery.dropotron.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
@@ -23,7 +22,6 @@
       <link rel="stylesheet" href="css/style-mobile.css"/>
     </noscript>
 <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-<script type="text/javascript" src="jquery.js"></script>
 <style type="text/css">
   /*div.wrapper-nav {
     overflow-x: visible !important;
@@ -294,109 +292,10 @@
         </div>
     </div>
    </body>
-<script src = "js/jquery-1.11.1.js"></script>
-   <script src = "js/sidr/jquery.sidr.min.js"></script>
-   <script src="https://maps.googleapis.com/maps/api/js"></script>
-   <script src = "js/maps.js"></script>
-   <script type="text/javascript" src="js/index.js"></script>
-   <script>
-$(function() {
-  var Accordion = function(el, multiple) {
-    this.el = el || {};
-    this.multiple = multiple || false;
 
-    // Variables privadas
-    var links = this.el.find('.link');
-    // Evento
-    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-  }
+  <script src = "js/jquery.sidr.min.js"></script>
+  <script src = "js/overall.js"></script>
+  <script src = "js/expand.js"></script>
 
-  Accordion.prototype.dropdown = function(e) {
-    var $el = e.data.el;
-      $this = $(this),
-      $next = $this.next();
-
-    $next.slideToggle();
-    $this.parent().toggleClass('open');
-
-    if (!e.data.multiple) {
-      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-    };
-  } 
-
-  var accordion = new Accordion($('#accordion'), false);
-});
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<script type="text/javascript">
-  $(document).ready(
-    function() {
-        $("button.main-na").click(function() {
-            $(".success-inquire").fadeIn(1000);
-        });
-        $("button.close-contact").click(function() {
-            $(".success-inquire").fadeOut(1000);
-        });
-    });
- $(document).ready(
-    function() {
-        $("button.main-nav").click(function() {
-            $(".success-reserve").fadeIn(1000);
-        });
-        $("button.close-contact").click(function() {
-            $(".success-reserve").fadeOut(1000);
-        });
-    });
-
-
-</script>
-<script type="text/javascript">
-var observe;
-if (window.attachEvent) {
-    observe = function (element, event, handler) {
-        element.attachEvent('on'+event, handler);
-    };
-}
-else {
-    observe = function (element, event, handler) {
-        element.addEventListener(event, handler, false);
-    };
-}
-function init (field) {
-    var text = document.getElementById(field);
-    function resize () {
-        text.style.height = 'auto';
-        text.style.height = text.scrollHeight+'px';
-    }
-    /* 0-timeout to get the already changed text */
-    function delayedResize () {
-        window.setTimeout(resize, 0);
-    }
-    observe(text, 'change',  resize);
-    observe(text, 'cut',     delayedResize);
-    observe(text, 'paste',   delayedResize);
-    observe(text, 'drop',    delayedResize);
-    observe(text, 'keydown', delayedResize);
-
-    text.focus();
-    text.select();
-    resize();
-
-}
-  init('text1');
-  init('text2');
-</script>
+</body>
 </html>

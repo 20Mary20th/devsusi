@@ -21,11 +21,20 @@
 
   var accordion = new Accordion($('#accordion'), false);
 
+  /* Checkout and Contact Page: This will show a modal window message */
   $("button.main-nav").click(function() {
     $(".mobile-nav").fadeIn(1000);
   });
         
   $("button.close").click(function() {
     $(".mobile-nav").fadeOut(1000);
+  });
+
+  $("button.main-nav").click(function() {
+    $(".success-reserve").fadeIn(1000);
+  });
+  
+  $("button.close-contact").click(function() {
+    $(".success-reserve").fadeOut(1000);
   });
 })(jQuery)
