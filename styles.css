@@ -119,6 +119,21 @@ button.submit {
     text-transform: uppercase;
 }
 
+input.submit1 {
+    height: 12%;
+    margin: 1.5% 3% 0px;
+    width: 94%;
+    background: none repeat scroll 0% 0% #000;
+    border: 0px solid #000;
+    font-size: 15px !important;
+    font-family: 'gotham-book' !important;
+    color: #FFF;
+    padding: 9px !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
 button.submit:hover, button.submit:active , button.submit:visited {
   background: #000;
 }
