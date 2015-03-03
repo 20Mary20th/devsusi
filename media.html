@@ -1,142 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-<meta charset="UTF-8">
-<title>Media</title>
- <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="css/tabs.css">
-  <link rel="stylesheet" href="css/foundation.css"/>
-  <link href="css/lightbox.css" rel="stylesheet" />
-<style type="text/css">
-  div.wrapper-nav {
-    overflow-x: visible !important;
-  }
-  .masonry {
-    -moz-column-count: 2;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 10px;
-    column-count: 2;
-    column-gap: 10px;
-  }
-
-.masonry div {
-    display: inline-block;
-    width: 100%;
-    background-color: #fff;
-  }
-</style>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" charset="UTF-8"/>
+  <title>Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/gallery.css">
+  <noscript>
+    <link rel="stylesheet" href="css/skel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-desktop.css" />
+    <link rel="stylesheet" href="css/style-mobile.css"/>
+  </noscript>
 <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery.dropotron.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
-    <noscript>
-      <link rel="stylesheet" href="css/skel.css" />
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/style-desktop.css" />
-      <link rel="stylesheet" href="css/style-mobile.css"/>
-    </noscript>
-<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 </head>
 <body>
 <!-- Header -->
-      <header id="header">
-        <div class="logo container">
-          <div>
-            <h1><a href="home.html" id="logo">Media</a></h1>
-          </div>
-          <div class= "cart"><a href="cart.html"><img src="images/icons/cart1.png" alt=""></a></div>
+  <header id="header">
+    <div class="logo container">
+      <div>
+        <h1>
+          <a href="home.html" id="logo">Media</a>
+        </h1>
+      </div>
+
+      <div class= "cart">
+        <a href="cart.html">
+          <img src="images/icons/cart1.png" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav id="nav" class="skel-layers-fixed">
+    <ul>
+      <li class="current"><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="botique.html">Boutique</a></li>
+      <li><a href="my-susi.html">Feed Me</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="wrapper-nav">
+    <div class="tab-menu">
+      <ul class="selection small-12">
+        <li class="active small-6" rel="tab1"><div class="tab-container">Gallery</div></li>
+        <li class="small-6"rel="tab2"><div class="tab-container">Blog</div></li>
+      </ul>
+    </div>   
+  </div>
+
+  <div class="wrapper-media" id = "wrapper-media1">
+    <div id="tab1" class="content">
+      <div class="masonry column">
+        <div class="item Drinks">
+          <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/Signage_Window.jpg" data-lightbox="example-2" data-title="Optional caption.">
+            <img src="images/signage2.jpg">
+          </a>
         </div>
-
-      </header>
-
-    <!-- Nav -->
-       <nav id="nav" class="skel-layers-fixed">
-       <ul>
-          <li class="current"><a href="home.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="botique.html">Boutique</a></li>
-          <li><a href="my-susi.html">Feed Me</a></li>
-          <li><a href="media.html">Media</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
- <div class="wrapper-nav">
-      <div class="tab-menu">
-        <ul class="selection small-12">
-         <li class="active small-6" rel="tab1"><div class="tab-container">Gallery</div></li>
-         <li class="small-6"rel="tab2"><div class="tab-container">Blog</div></li>
-        </ul>
-      </div>   
+              
+        <div class="item Decor"> 
+          <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_001Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
+            <img src="images/signage3.jpg">
+          </a>
+        </div>
+              
+        <div class="item Decor">
+          <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_004Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
+            <img src="images/signage4.jpg">
+          </a>
+        </div>
+              
+        <div class="item Decor">
+          <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
+            <img src="images/signage1.jpg">
+          </a>
+        </div>   
+              
+        <div class="item Decor">
+          <a class="example-image-link" href="images/media-1.jpg" data-lightbox="example-2" data-title="Optional caption.">
+            <img src="images/media-1.jpg">
+          </a>
+        </div>  
+              
+        <div class="item Decor">
+          <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
+            <img src="images/signage5.jpg">
+          </a>
+        </div>     
+      </div>
+      <div class="clear-both"></div>
     </div>
 
-   <div class="wrapper-media" id = "wrapper-media1">
-          <div id="tab1" class="content">
-           <div class="masonry column">
-             <div class="item Drinks">
-              <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/Signage_Window.jpg" data-lightbox="example-2" data-title="Optional caption.">
-                    <img src="images/signage2.jpg">
-                    </a>
-              </div>
-              <div class="item Decor"> 
-              <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_001Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
-                    <img src="images/signage3.jpg">
-                    </a>
-              </div>
-              <div class="item Decor">
-                <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_004Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
-                     <img src="images/signage4.jpg">
-                     </a>
-              </div>
-              <div class="item Decor">
-              <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
-                      <img src="images/signage1.jpg">
-                      </a>
-              </div>   
-              <div class="item Decor">
-              <a class="example-image-link" href="images/media-1.jpg" data-lightbox="example-2" data-title="Optional caption.">
-                      <img src="images/media-1.jpg">
-                      </a>
-              </div>  
-              <div class="item Decor">
-              <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
-                      <img src="images/signage5.jpg">
-                      </a>
-              </div>     
-          </div>
-          <div class="clear-both"></div>
-         </div>
-      <div id="myModal" class="reveal-modal tiny" data-reveal>
-        <a class="close-reveal-modal">&#215;</a>
+    <div id="myModal" class="reveal-modal tiny" data-reveal>
+      <a class="close-reveal-modal">&#215;</a>
         <img src="" />
-      </div>
-       <div id="tab2" class="content">
-      
-            <div class="blog-content column">
-              <img class="blog-image" src="images/blog.jpg" alt=""/>
-              <h5 class="blog-title">Top Chefs In Town</h5>
-              <div class="blog-header"><span class="author">Bianca Mabanta</span><span class="split">|</span><span class="date">Sept 1</span></div>
+    </div>
+       
+    <div id="tab2" class="content">
+      <div class="blog-content column">
+        <img class="blog-image" src="images/blog.jpg" alt=""/>
+          <h5 class="blog-title">Top Chefs In Town</h5>
+            <div class="blog-header">
+              <span class="author">Bianca Mabanta</span>
+              <span class="split">|</span><span class="date">Sept 1</span>
             </div>
-            <div class="clear-both"></div>
-       </div>
+        </div>
+        <div class="clear-both"></div>
+    </div>
 
-   </div> 
-   </body>
-<script src = "js/jquery-1.11.1.js"></script>
+  </div> 
+</body>
+  <script src = "js/jquery-1.11.2.min.js"></script>
   <script src = "js/menu.js"></script>
   <script src = "js/foundation.reveal.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-   <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-     <script src="js/mootools-core-1.3.1.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/mootools-more-1.3.1.1.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/simple-modal.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
+  <script src = "js/foundation.min.js"></script>
+  <script src = "js/index.js"></script>
+  <script src = "js/jquery.min.js"></script>
+  <script src = "js/jquery.dropotron.min.js"></script>
+  <script src = "js/mootools-core-1.3.1.js"></script>
+  <script src = "js/mootools-more-1.3.1.1.js"></script>
+  <script src = "js/simple-modal.js"></script>
+  <script src = "js/lightbox.min.js"></script>
 </html>
