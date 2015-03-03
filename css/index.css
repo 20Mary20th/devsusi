@@ -1031,8 +1031,6 @@ div.product-entree-ing ul li {
 
 /* Feb 18 Owners Page by Ayee */
 
-/* */
-
 /* Feb 25 Splash Page */
 
 div.wrapper-logo-splash {
@@ -1048,9 +1046,12 @@ div.wrapper-logo-splash img {
   -opera-transform: translate(-50%, -50%);;
 }
 
-img#logo-susi {
-  /*display: none;*/
-}
-img#logo-gems {
-  /*display: none;*/
+/* Mar 3 Contact Page --> Moving the previous inline CSS and saved it in index.css*/
+
+/*div.wrapper-nav {
+  overflow-x: visible !important;
+}*/
+
+div.nav-menu {
+  width: auto !important;
 }

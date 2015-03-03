@@ -1,4 +1,4 @@
-(function() {
+(function($) {
 	console.log('it work!');
   var observe;
     if (window.attachEvent) {
@@ -31,8 +31,9 @@ function init (field) {
     text.focus();
     text.select();
     resize();
-    init('text1');
-    init('text2');
-    
 }
-})
+
+   init('text1');
+   init('text2');
+   
+})(jQuery)
