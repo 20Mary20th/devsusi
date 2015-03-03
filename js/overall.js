@@ -33,6 +33,7 @@
     },
 
     cartCompute : function() {
+      console.log('cart');
       var price = 0 ;
       var del = $(".price-delivery").data('delivery');
         $(".product-container").each(function() {
@@ -60,18 +61,22 @@
         //     }
 
       }
-      $(".remove").click(function(){
-        var produclength = $('.product-container').length;
-          if (produclength != 0) {
-            $(this).parent().remove();
-          }
-      });
+
     },
 
+    cartShowMsg: function() {
+      $(".remove").click(function() {
+        var productlength = $('.product-container').length;
+          if (productlength != 0) {
+            $(this).parent().remove();
+          }
+          setjs.cartCompute();
+      });
+    },
   };
 
   setjs.menuBar();
   setjs.aboutNav();
   setjs.cartCompute();
-  console.log('overall');
+  setjs.cartShowMsg();
 })(jQuery)
