@@ -1,0 +1,11 @@
+ul.selection li {
+   background: #fff;
+}
+
+ul.selection li div.tab-container:first-child{
+   border-right: 1px solid #CCC;
+}
+  
+ul.selection li div.tab-container:last-child {
+
+}
