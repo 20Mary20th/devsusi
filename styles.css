@@ -327,9 +327,13 @@ div.wrapper-nav {
     /*height: 12%;*/
     overflow-x: auto;
     padding-bottom: 10px;
-    padding-top: 0px;
+    padding-top: 15px;
     width: 100% !important;
     margin-top: 45px;
+}
+/* March 3 --> Exclusive on About Nav Tabs */
+div#about-nav {
+  padding-top: 0px;
 }
 
 div.wrapper-nav ul.selection {
