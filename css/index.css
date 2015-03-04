@@ -1148,3 +1148,42 @@ div.wrapper-modal-reg {
 div#reg-submit {
   text-align: center;
 }
+
+/* Mar 4 --> Page Entree [Footer Section] Modal Messages */
+
+div.modal-entree-fav, div.modal-entree-rec, div.modal-entree-share {
+  display: none;
+}
+
+div.overall-modal1 {
+  text-align: center;
+  position: relative;
+  height: 200px;
+  z-index: 5;
+}
+
+div.modal-entree-fav {
+  background: yellow;
+  height: 200px;
+  /*top: 0;
+  width: 100%;*/
+}
+
+div.modal-entree-rec {
+  background: red;
+  height: 200px;
+    /*top: 0;
+  width: 100%;*/
+}
+
+div.modal-entree-share {
+  background: blue;
+  height: 200px;
+    /*top: 0;
+  width: 100%;*/
+}
+
+div.settop {
+  top: 0;
+  width: 100%;
+}

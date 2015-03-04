@@ -29,14 +29,14 @@ $(document).ready(
 
       
   });
-$(document).ready(
-    function() {
-        $("li.share").click(function() {
-            $(".container-social").fadeIn(1000);
-            $('body, html').css('overflow', 'hidden');
-        });
-        $("button.close-container-social").click(function() {
-            $(".container-social").fadeOut(1000);
-            $('body, html').css('overflow', 'scroll');
-        });
-    });
+// $(document).ready(
+//     function() {
+//         $("li.share").click(function() {
+//             $(".container-social").fadeIn(1000);
+//             $('body, html').css('overflow', 'hidden');
+//         });
+//         $("button.close-container-social").click(function() {
+//             $(".container-social").fadeOut(1000);
+//             $('body, html').css('overflow', 'scroll');
+//         });
+//     });
