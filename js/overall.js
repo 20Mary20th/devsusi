@@ -73,6 +73,8 @@
           setjs.cartCompute();
       });
     },
+
+    
   };
 
   setjs.menuBar();

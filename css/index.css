@@ -1094,3 +1094,57 @@ div.modal-forgot {
 div.wrapper-modal-forgot {
   padding: 0 10px;
 }
+
+/* Mar 4 --> Register Page */
+
+div#reg-header {
+  text-align: center;
+}
+
+div.header-register {
+  text-align: center;
+}
+
+div.form-personal1, div.form-personal2, div.form-personal3 {
+  padding: 0 10px;
+}
+
+div.personal-names input, div.form-personal2 input, div.form-personal3 input[type=textfield] {
+  height: 30px;
+  padding-left: 3px;
+}
+
+input#age1 {
+  margin: 10px 35px 0 10px;
+}
+
+label.gendertxt1 {
+  margin-top: 10px;
+}
+
+div.form-reg-submit {
+  text-align: center;
+}
+
+div.form-reg-submit input {
+  border: 1px solid #000;
+  font-family: gotham-light;
+  font-size: 13px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+/* Mar 4 --> Register Page Form Message */
+
+div.reg-forgot {
+  height: 100%;
+  z-index: 5;
+}
+
+div.wrapper-modal-reg {
+  padding: 0 10px;
+}
+
+div#reg-submit {
+  text-align: center;
+}
