@@ -1060,6 +1060,37 @@ div.nav-menu {
 
 /* Mar 3 Page Entree */
 
-div.img-slides {
-  
+/* Mar 4 Forgot Form */
+
+img#forgot-back {
+  height: 50px;
+  width: 50px;
+}
+
+div.wrapper-forgot {
+  padding: 10px 10px 0;
+}
+
+div.wrapper-forgot h6 {
+  font-size: 13px;
+  font-family: gotham-light;
+}
+
+div#forgot-submit {
+  text-align: center;
+}
+
+input.forgot-send-email {
+  font-family: gotham-light;
+  font-size: 13px;
+  border: 1px solid #000;
+}
+
+div.modal-forgot {
+  height: 100%;
+  z-index: 5;
+}
+
+div.wrapper-modal-forgot {
+  padding: 0 10px;
 }

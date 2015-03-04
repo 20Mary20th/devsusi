@@ -14,30 +14,32 @@
   <header id="header">
     <div class="logo row">
       <div class = "small-3 columns left">
-        <img class="logo" src="images/icons/arrow-back.png" alt="">
+        <a href="login.html"><img class="logo" id = "forgot-back" src="images/icons/arrow-back.png" alt=""></a>
       </div>
-      <div class = "small-12 columns">
+      <div class = "small-7 columns left forgot-logo1">
         <img class="logo" src="images/icons/susilogo2.png" alt="">
-      </div>
-      <div class = "forgot-subtitle">
-        <h6>The Key to Sustaining Life</h6>
       </div>
     </div>
   </header>
      
-  <div class="wrapper-forgot">
+   <div class="container-msg1">
+     <div class="wrapper-forgot">
     <div class="banner-forgot">
       <h6>Don't worry! We got your back.</h6>
       <h6>Enter your email address and then we will email you for further instructions to recover your account.</h6>
     </div>
          
     <div class="forgot-email">
-      <input type="text" placeholder="email address"/>
+      <input type="text" placeholder="email address" required = "yes"/>
     </div>
          
     <div id="forgot-submit">
-      <input type="submit" value = "Send Email" />
+      <a href="#" class = "send-email1"><input type="submit" value = "Send Email" class = "forgot-send-email"/></a>
     </div>
   </div>
+   </div>
+  
 </body>
+  <script src = "js/jquery-1.11.2.min.js"></script>
+  <script src = "js/forgot.js"></script>
 </html>
