@@ -1,27 +1,42 @@
 (function($){
-  
   var win = $(window).width();
   var geting = $('div#ingredients-container');
   var imgslides = $('div.img-slides1');
+  var len = $('div.img-slides1').length;
   var position = 0;
-  var positionlimit = win * $('div.img-slides1').length; // 768 * 3 = 2304
+  var positionlimit = win * $('div.img-slides1').length;
 
-
-  $('div.overall-ingredients-cont').css({
-    'width' : win,
-    'overflow' : 'hidden'
-  });
-  
   geting.css({
-   'width' : positionlimit, // 2304
-   'float' : 'left'
+   'width' : positionlimit, 
+   'position' : 'relative'
   });
 
-  $('div.img-slides1').css({
-    'width' : win // 768
+  imgslides.css({
+    'width' : win,
   });
 
-  console.log('Window:' + win);
-  console.log(geting);
-  console.log('Images' + imgslides);
+  geting.on('swipeleft', function(event) {    
+    if (position != (positionlimit - win)) { 
+        position += win; 
+      $(this).animate({
+        'right' : position
+      });
+    }
+  });
+
+  geting.on('swiperight', function(event) {
+    if ( position != 0 ) {
+        position -= win;
+        $(this).animate({
+          'right' : position
+        });
+    }
+  });
+
+  //Note: ALWAYS USE POSITION WHEN ANIMATE -- KIM
+
+  $('.img-ing1').on('dragstart', function(e){
+    e.preventDefault();
+  });
+
 })(jQuery);

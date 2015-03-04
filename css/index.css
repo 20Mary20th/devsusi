@@ -597,14 +597,22 @@ div.cont-slides1 {
 
 }
 
-div.img-slides1 img {
-  /*padding: 0 37px;*/
-  /*height: 275px !important;
-  width: 355px !important; */
-  background-size: cover;
-  width: 320px !important;
-  /*height: 480px !important;*/
+div.img-slides1 {
+  position: relative;
 }
+
+/* Mar 4 */
+
+div.overall-ingredients-cont {
+  position: relative;
+  z-index: 5;
+}
+
+div.img-slides1 img {
+  background-size: cover;
+}
+
+/* End of Mar 4 */
 
 div.ingredients-text {
   color: #000;
