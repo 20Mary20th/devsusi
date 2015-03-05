@@ -1,36 +1,85 @@
 (function($) {
-   
-   var win = $(window).width();
-   $('div.overall-modal1').css({'width': win});
-   $('div.modal-entree-fav').removeClass('settop');
-   $('div.modal-entree-rec').removeClass('settop');
-   $('div.modal-entree-share').removeClass('settop');
+  var win = $(window).width(),
+      modalsha = $('div.shadow1'),
+      heightsha = modalsha.height(),
+      footer = $('div.bottom-black'),
+      modalall = $('div.overall-modal1'),
+      modalfav = $('div.modal-entree-fav'),
+      modalrec = $('div.modal-entree-rec'),
+      modalshare = $('div.modal-entree-share'),
+      showsocial1 = $('div.social-containers1');
+      minus = heightsha * 2 - footer.height();
+      
+      modalsha.css({'height' : minus });
+      modalfav.removeClass('settop');
+      modalrec.removeClass('settop');
+      modalshare.removeClass('settop');
+      
+  var show = {
+      top1 : function() {
+        window.scrollTo(0, 1);
+      },
+      showModal : function(fav1, rec1, share1, close) {
+        fav1.on('click', function(){
+          show.top1();
+          modalsha.fadeIn(300);
+          modalall.fadeIn(500).css({'display' : 'block'});
+          modalfav.addClass('settop').fadeIn(300);
+          modalrec.removeClass('settop').css({'display': 'none'});
+          modalshare.removeClass('settop').css({'display': 'none'});
+        });
+        rec1.on('click', function(){
+          show.top1();
+          modalsha.fadeIn(300);
+          modalall.fadeIn(500).css({'display' : 'block'});
+          modalrec.addClass('settop').fadeIn(300);
+          modalfav.removeClass('settop').css({'display': 'none'});
+          modalshare.removeClass('settop').css({'display': 'none'});
+        });
+        share1.on('click', function(){
+          show.top1();
+          modalsha.fadeIn(300);
+          modalall.fadeIn(500).css({'display' : 'block'});
+          modalshare.addClass('settop').fadeIn(300);
+          modalrec.removeClass('settop').css({'display': 'none'});
+          modalfav.removeClass('settop').css({'display': 'none'});
+        });
+        close.on('click', function(){
+          modalsha.fadeOut(300);
+          modalall.fadeIn(300).css({'display' : 'none'});
+        });
+      },
+      showSocial : function(fb, twitter, pin, insta) {
+        fb.on('click', function() {
+          modalsha.fadeOut(300);
+          modalall.fadeIn(300).css({'display' : 'none'});
+          showsocial1.show().load('http://www.facebook.com');
+        });
 
-   $('li.fav').on('click', function(){
-     // $(this).removeClass('share');
-     // console.log('remove!');
-     $('div.modal-entree-fav').addClass('settop').fadeIn(300);
-     $('div.modal-entree-rec').removeClass('settop').css({'display': 'none'});
-     $('div.modal-entree-share').removeClass('settop').css({'display': 'none'});
+        twitter.on('click', function() {
+          console.log('twitter');
+          modalsha.fadeOut(300);
+          modalall.fadeIn(300).css({'display' : 'none'});
+          showsocial1.show().load('www.twitter.com');
+        });
 
-   });
+        pin.on('click', function() {
+          console.log('pin');
+          modalsha.fadeOut(300);
+          modalall.fadeIn(300).css({'display' : 'none'});
+          showsocial1.show().load('www.pinterest.com');
+        });
 
-   $('li.recommend').on('click', function(){
-     console.log('favorite');
-     $('div.modal-entree-rec').css({'top' : '0', 'width' : '100%'}).fadeIn(300);
-     $('div.modal-entree-fav').removeClass('settop').css({'display': 'none'});
-     $('div.modal-entree-share').removeClass('settop').css({'display': 'none'});
-   });
-
-   $('li.share-ayee').on('click', function(){
-     console.log('recommend');
-     $('div.modal-entree-share').css({'top' : '0', 'width' : '100%'}).fadeIn(300);
-     $('div.modal-entree-rec').removeClass('settop').css({'display': 'none'});
-     $('div.modal-entree-share-fav').removeClass('settop').css({'display': 'none'});
-   });
-
-
-
+        insta.on('click', function() {
+          console.log('insta');
+          modalsha.fadeOut(300);
+          modalall.fadeIn(300).css({'display' : 'none'});
+          showsocial1.show().load('www.instagram.com');
+        });
+      }
+  };
+  show.showModal($('li.fav'), $('li.recommend'), $('li.share-ayee'), $('div.wrapper-close'));
+  show.showSocial($('img.selectfb'), $('img.selecttwitter'), $('img.selectpin'), $('img.selectinsta'));
 })(jQuery)
 
 /*  (function(d, s, id) {
